@@ -3,3 +3,8 @@
   from = "/"
   to = "/en/vision/"
   status = 302
+
+[[redirects]]
+  from = "/en/"
+  to = "/en/vision/"
+  status = 302
