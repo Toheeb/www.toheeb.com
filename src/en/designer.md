@@ -14,4 +14,3 @@ Armed with a borrowed laptop that saves no charge, a phone that discharges faste
 
 I'll run Rugged Web Studio to keep my sanity and fund my expenses in building the web 1.0++ portfolio.
 
-Pending my first gig, you can buy me ~~coffee~~ garri on Kofi to support my vision of a self-sufficient web.
