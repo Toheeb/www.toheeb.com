@@ -28,13 +28,13 @@ I wanted more. I wanted a piece of the web I own and can do me unlimited.
 
 Today, the idea becomes real.
 
-I want each of you and I to own our web homes. It will look and function anyhow we want. From the comfort of our websites, there will be no limits to what we can do.
+I want each of you and I to own our web homes. It will look and function however we want. From the comfort of our websites, there will be no limits to what we can do.
 
 Send or receive messages? checked. Read or publish blogs? checked. Sell or buy products? checked. Use or create apps? checked. Yin and yang anything? Double-checked.
 
 You see, all these activities without visiting third-party websites. Meaning, they won't own a piece of you and me.
 
-TO a self-sufficient web.
+[TO a self-sufficient web.](/en/portfolio/)
 
 <address>
   <p>
