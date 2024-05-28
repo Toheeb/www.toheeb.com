@@ -1,0 +1,90 @@
+
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.site-nav {
+  display: grid;
+  gap: 1em;
+}
+
+.site-nav > h1 {
+  font-variant: all-small-caps;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  margin: 0;
+  font-size: 1.25em;
+  font-weight: 900;
+  max-width: none;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.site-nav > h1::before,
+.site-nav > h1::after {
+  content: "";
+  height: 0.8em;
+  width: 1px;
+  background-color: #777;
+}
+
+.site-nav h2 {
+  font-size: 1.1em;
+  margin: 3em 0 1em;
+}
+
+.site-nav h2 cite {
+  font-style: normal;
+}
+
+.site-nav__links {
+  --link-width: 9em;
+
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  row-gap: 1.25em;
+  text-align: center;
+  font-variant: all-small-caps;
+  letter-spacing: 0.05em;
+  line-height: 1;
+
+  width: 100%;
+  max-width: calc(2 * var(--link-width));
+}
+
+.site-nav__links > * {
+  text-indent: var(--link-cue-size);
+  flex: 0 1 var(--link-width);
+}
+
+.site-nav__links > [aria-current="page"] {
+  order: 3;
+}
+
+@media screen and (min-width: 320px) {
+  .site-nav > h1::before,
+  .site-nav > h1::after {
+    height: 1.6em;
+  }
+
+  .site-nav__links {
+    margin: -2.5em auto 0;
+  }
+}
+
+main > footer {
+  margin: 8rem auto 0;
+  font-size: .875em;
+}
