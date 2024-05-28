@@ -1,10 +1,11 @@
 ---
 layout: page.html
-title: Get Rugged Web sites from Ọlaábíyi
+eleventyComputed:
+  title: T. Ọlámilékan Ogunbíyi ({{site.designer}})
 ---
 
 <hgroup>
-  <p>Ọlaábíyi</p>
+  <p>{{site.designer}}</p>
   <h1>T. Ọlámilékan Ogunbíyi </h1>
   <p>A National Award-winning Web Developer</p>
 </hgroup>

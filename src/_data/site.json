@@ -1,3 +1,18 @@
 {
-  "url": "https://www.toheeb.com"
+  "url": "https://www.toheeb.com",
+  "menu": [
+    {
+      "label": "Studio",
+      "url": "/en/studio/"
+    },
+    {
+      "label": "Vision",
+      "url": "/en/vision/"
+    },
+    {
+      "label": "Portfolio",
+      "url": "/en/portfolio/"
+    }
+  ],
+  "designer": "Ọlaábíyi"
 }
