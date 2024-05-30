@@ -1,0 +1,18 @@
+{% set toc = collections['hc-parts-and-chapters'] %}
+<ol id="hc-book-toc" class="toc__category-title-list">
+  {% for part in toc %}
+  <li>
+    <p class="toc__category-title"> {{ part.name }} </p>
+    <ol class="toc__title-list" start="{{ part.cummulativeChapterLength }}">
+      {% for chapter in part.chapters %}
+      <li>
+        <p class="toc__title"><a href="{{ chapter.url }}"> {{ chapter.data.title }} </a></p>
+      </li>
+      {% endfor %}
+    </ol>
+  </li>
+  {% endfor %}
+</ol>
+
+
+

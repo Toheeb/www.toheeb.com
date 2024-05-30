@@ -1,0 +1,36 @@
+
+<footer>
+    <nav>
+      <h2>Pagination</h2>
+      
+      {% set hc = collections['hc-chapters'] %}
+      {% set previousPost = hc | getPreviousCollectionItem %}
+      {% set nextPost = hc | getNextCollectionItem %}
+      {% set currentPost = hc | getCollectionItem %}
+
+      <p>
+        {{currentPost.data.title}} is the Chapter {{ currentPost.data.hcChapter }} of <a href="/en/html-by-contents/"> <cite>HTML by Contents</cite> </a>
+      </p>
+      
+
+      <ol>
+        {% if previousPost %} 
+        <li>
+          <p>
+            Previous Chapter: <a href="{{ previousPost.url }} "> {{ previousPost.data.title }}.</a> 
+          </p>
+        </li>
+        {% endif %}
+
+        {% if nextPost %} 
+        <li>
+          <p>
+            Next Chapter: <a href="{{ nextPost.url }} "> {{ nextPost.data.title }}.</a> 
+          </p>
+        </li>
+        {% endif %}
+      </ol>
+
+    </nav>
+
+  </footer>

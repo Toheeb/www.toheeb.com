@@ -88,3 +88,92 @@ main > footer {
   margin: 8rem auto 0;
   font-size: .875em;
 }
+
+
+
+
+
+
+
+
+.toc__category-title-list {
+  padding: 0;
+  list-style: square inside;
+  width: 100%;
+  margin: 0.5em auto 0;
+}
+
+.toc__category-title-list > li::marker {
+  font-size: .75em;
+}
+
+.toc__category-title {
+
+  display: flex;
+  gap: .5em;
+  align-items: baseline;
+
+  /* remove width of ::marker so ::marker flows to the right of the float */
+  width: calc(100% - 2.8ch);
+  float: left;
+
+  margin: 0 0 .75em;
+  box-sizing: border-box;
+  padding: 0 1ch 0 0;
+
+  font-variant: all-small-caps;
+  letter-spacing: .05em;
+}
+
+.toc__category-title::after {
+  content: '';
+  flex: auto;
+  border-bottom: 1px dashed #ccc;
+}
+
+
+.toc__title-list {
+  margin: 0 0 .75em .5em;
+  padding: 0;
+  list-style: decimal-leading-zero inside;
+
+  /* clears the floated category paragraph that introduces the list */
+  clear: left;
+}
+
+
+/* clears each floated paragraph within the list item */
+.toc__title-list > li::after {
+content: '';
+clear: both;
+display: table;
+}
+
+.toc__title-list > li::marker {
+  font-size: .75em;
+}
+
+.toc__title {
+  margin: 0 0 .75em;
+}
+
+
+@media screen and (min-width: 280px) {
+
+  .toc__title {
+    float: left;
+    width: calc(100% - 3ch);
+    padding: 0 1ch 0 0;
+    display: flex;
+    align-items: baseline;
+    box-sizing: border-box;
+  }
+
+  .toc__title::after {
+      content: '';
+      flex: auto;
+      border-bottom: 1px dashed #ccc;
+  }
+
+}
+

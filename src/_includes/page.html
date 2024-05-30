@@ -29,7 +29,14 @@
       <main>
         {% if siteNav !== false %} {% include './site-nav.html' %} {% endif %}
 
-        <section>{{ content | safe }}</section>
+        <section>
+          {{ content | safe }}
+        
+          {% if book === 'hc' and hcNav !== false %}
+            {% include './html-book-pagination.njk' %}
+          {% endif %}
+          
+        </section>
         
         <footer>
           <p>&copy; <a href="/en/designer/">{{site.designer}}.</a> Reforming the World Wide Web from Nigeria &#127475; </p>
