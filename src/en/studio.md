@@ -8,8 +8,12 @@ description: I partner with brands to code Web UI designs that withstand the cha
 
 # {{title}}
 
-Hi, I partner with brands to code Web UI designs that withstand the challenges of visitors and test of times.
+I partner with brands to code Web UIs that enable visitors to access offers anywhere, anytime, and anyhow.
 
-Details coming soon. 
+[Contact ola@toheeb.com.](mailto:ola@toheeb.com) <small>10 partnerships and 100 DIY slots available.</small>
 
-In the meantime, let's [chat about your brand on telegram](https://t.me/olaabiyi)
+## North Star
+
+My services, pro bono works, and resources are geared towards creating the first web design tool. One that enables a self-sufficient web.
+
+<strong>Spoiler alert</strong>: this open source tool, which will likely be free, will take my job and other web services you currently use.
