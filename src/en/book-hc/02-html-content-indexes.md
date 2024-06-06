@@ -1,5 +1,7 @@
 ---
-title: The Contents of HTML
+eleventyComputed:
+  title: The {{data.length}} Contents of HTML
+
 tags:
   - hc
   - hc-preface
@@ -14,7 +16,7 @@ style: |
       display: grid;
       grid-template-columns: repeat(auto-fill, 8em);
       list-style: none;
-      margin: 3em auto;
+      margin: 1em auto;
       padding: 0;
       gap: 1em;
       width: 100%;
@@ -792,7 +794,7 @@ data: [
 
 # The {{data.length}} Contents of HTML
 
-
+<!-- 
 <form action="">
   <p>
     <label>
@@ -837,7 +839,7 @@ data: [
     </label>
   </p>
 </form>
-
+ -->
 
 
 <ol class="content-list">

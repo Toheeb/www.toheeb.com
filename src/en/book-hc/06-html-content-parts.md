@@ -298,26 +298,6 @@ The syntax is a [`section` element](https://html.spec.whatwg.org/#the-section-el
 </section>
 
 
-<section>
-  <h3 id="part-main">Main Part</h3>
-
-  A Main Part relates a set of [Content Sections](#content-sections), [Header Parts](#part-header), and [Footer Parts](#part-footer) for the viewport of a [Primary Content Window](/en/html-content-windows/#window-primary)
-
-  The syntax is a [`main` element](https://html.spec.whatwg.org/#the-main-element) with the following attributes and child elements:
-
-  - Zero or one count for each [`hidden` attribute](/en/html-content-attributes/#attribute-hidden) and other [Global Attribute](https://html.spec.whatwg.org/#global-attributes) 
-
-    By the way, the `hidden` attribute must apply to all but one Main Part in the Primary Window
-
-  - Zero or more [Content Parts](#outline) excluding [Content Segments](#content-segments)
-
-  ```html
-  <main>
-
-  </main>
-  ```
-</section>
-
 
 
 </aside>

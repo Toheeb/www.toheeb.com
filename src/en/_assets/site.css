@@ -97,9 +97,7 @@ main > footer {
 
 
 .toc__category-title-list {
-  padding: 0;
   list-style: square inside;
-  width: 100%;
   margin: 0.5em auto 0;
 }
 

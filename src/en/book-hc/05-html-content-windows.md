@@ -37,7 +37,7 @@ hcChapter: 5
 
   - Zero or one count for each [Global Attribute](https://html.spec.whatwg.org/#global-attributes)
 
-  - Zero or more counts for each of the following parts: [Main Part](/en/html-content-parts/#part-main), [Content Section,](/en/html-content-parts/#content-sections) [Header Part,](/en/html-content-parts/#part-header) and [Footer Part](/en/html-content-parts/#part-footer)
+  - Zero or more counts for each of the following parts: [Main Part](/en/html-content-parts/#view-main), [Content Section,](/en/html-content-parts/#content-sections) [Header Part,](/en/html-content-parts/#part-header) and [Footer Part](/en/html-content-parts/#part-footer)
 
   ```html
   <body></body>
@@ -65,4 +65,23 @@ hcChapter: 5
   ```
 </section>
 
+<aside>
+  <h3 id="view-main">Main View</h3>
+
+  A Main View relates a set of [Content Sections](#content-sections), [Header Parts](#part-header), and [Footer Parts](#part-footer) for the viewport of a [Primary Content Window](/en/html-content-windows/#window-primary)
+
+  The syntax is a [`main` element](https://html.spec.whatwg.org/#the-main-element) with the following attributes and child elements:
+
+  - Zero or one count for each [`hidden` attribute](/en/html-content-attributes/#attribute-hidden) and other [Global Attribute](https://html.spec.whatwg.org/#global-attributes) 
+
+    By the way, the `hidden` attribute must apply to all but one Main Part in the Primary Window
+
+  - Zero or more [Content Parts](#outline) excluding [Content Segments](#content-segments)
+
+  ```html
+  <main>
+
+  </main>
+  ```
+</aside>
 
