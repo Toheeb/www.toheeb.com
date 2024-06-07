@@ -13,29 +13,6 @@ hcChapter: 14
 <h1>6 HTML Stle Guides</h1>
 
 
-<section>
-  <h2>Avoid nesting Content Windows</h2>
-
-  Content Windows are mutually exclusive. Only one can be active at a time even if it has descendants. Hence, it's redundant to nest content windows.
-
-  ```html
-  <dialog>
-    <dialog></dialog>
-    <dialog></dialog>
-  </dialog>
-  ``` 
-
-  Meanwhile: the Primary Window, through the `body` element, doubles as the root of all Secondary Windows. To maintain the style guide, introduce a child `div` element to act as the Primary window and let the `body` element focus on being only the root for content windows.
-
-  ```html
-  <body>
-    <div></div>             <!-- Primary Window -->
-    <dialog></dialog>       <!-- Secondary Window -->
-    <dialog></dialog>       <!-- Secondary Window -->
-  </body>
-  ```
-</section>
-
 
 
 <section>

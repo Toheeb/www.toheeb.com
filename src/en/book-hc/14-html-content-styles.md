@@ -1,5 +1,5 @@
 ---
-title: 1+ Content Style Guides for HTML
+title: 2+ Content Style Guides for HTML
 tags:
   - hc
   - hc-protocol
@@ -7,7 +7,51 @@ tags:
 hcChapter: 14
 ---
 
-# 1+ Content Style Guides for HTML
+# 2+ Content Style Guides for HTML
+
+HTML is declarative.
+
+It won't warn you of a bad markup talkless of a potential bad markup. 
+
+This style guide help you avoid issues on the long run. 
+
+<section>
+  <h2>Avoid nesting Content Windows</h2>
+
+  Content Windows are mutually exclusive. Only one can be active at a time even if it has descendants. Hence, it's redundant to nest content windows.
+
+  <figure>
+  
+  ```html
+  <body>
+    <dialog>
+      <dialog></dialog>
+    </dialog>
+  </body>
+  ``` 
+  <figcaption>
+
+    The markup above is unsemantic to how it functions. A Primary Window (`body` element) parents a Secondary Window (`dialog` element) which parents another Secondary Window.
+  </figcaption>
+  </figure>
+
+  <figure>
+
+  ```html
+  <body>
+    <div></div> <!-- represents primary window -->
+    <dialog></dialog>
+    <dialog><dialog>
+  </body>
+  ```
+  <figcaption>
+    
+    The markup above is semantic to how it functions. It introduce a `div` element to represent the primary window since the `body` element doubles as the root of all non-meta contents. In addition, no secondary windows are nested.  
+  </figcaption>
+  </figure>
+</section>
+
+
 
 <section>
 <h2 id="boilerplate">Start with this 7-content boilerplate</h2>
