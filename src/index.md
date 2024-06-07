@@ -8,4 +8,4 @@ siteNav: false
 
 Browse this site in one of the following available language(s):
 
-- [English](/en/)
+- [English (toheeb.com/en/) ](/en/)
