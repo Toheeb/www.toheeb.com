@@ -1,6 +1,7 @@
 ---
 layout: page.html
 title: Site Index
+siteNav: false
 ---
 
 # {{title}}
