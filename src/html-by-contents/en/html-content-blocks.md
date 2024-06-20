@@ -1,11 +1,7 @@
 ---
 title: The 14 Content Blocks of HTML
-tags:
-  - hc
-  - hc-primal
-
-hcChapter: 8
-
+canonical: https://www.toheeb.com/en/html-content-blocks/
+book-hc: 7
 ---
 
 

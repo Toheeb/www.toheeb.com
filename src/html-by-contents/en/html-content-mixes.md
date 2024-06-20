@@ -1,12 +1,9 @@
 ---
 title: The 13 Content Mixes of HTML
-tags:
-  - hc
-  - hc-primal
-
-hcChapter: 7
-
+canonical: https://www.toheeb.com/en/html-content-mixes/
+book-hc: 6
 ---
+
 
 <header>
 

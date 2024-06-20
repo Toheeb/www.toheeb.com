@@ -1,11 +1,7 @@
 ---
 title: The 3 Content Breaks of HTML
-tags:
-  - hc
-  - hc-phrasing
-
-hcChapter: 12
-
+canonical: https://www.toheeb.com/en/html-content-breaks/
+book-hc: 8
 ---
 
 

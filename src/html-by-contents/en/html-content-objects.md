@@ -1,12 +1,9 @@
 ---
 title: The 9 Content Objects of HTML
-tags:
-  - hc
-  - hc-phrasing
-
-hcChapter: 9
-
+canonical: https://www.toheeb.com/en/html-content-objects/
+book-hc: 9
 ---
+
 
 <header>
 

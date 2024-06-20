@@ -1,11 +1,7 @@
 ---
 title: The 24 Content Forms of HTML
-tags:
-  - hc
-  - hc-phrasing
-
-hcChapter: 10
-
+canonical: https://www.toheeb.com/en/html-content-forms/
+book-hc: 10
 ---
 
 <header>

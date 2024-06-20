@@ -3,7 +3,7 @@
     <nav>
       <h2>Pagination</h2>
       
-      {% set hc = collections['hc-chapters'] %}
+      {% set hc = collections['book-hc'] %}
       {% set previousPost = hc | getPreviousCollectionItem %}
       {% set nextPost = hc | getNextCollectionItem %}
       {% set currentPost = hc | getCollectionItem %}

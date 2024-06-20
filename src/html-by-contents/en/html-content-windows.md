@@ -1,12 +1,9 @@
 ---
 title: The 2 Content Windows of HTML
-tags:
-  - hc
-  - hc-preamble
-
-hcChapter: 5
-
+canonical: https://www.toheeb.com/en/html-content-windows/
+book-hc: 4
 ---
+
 
 
 <header>

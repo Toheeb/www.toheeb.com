@@ -1,11 +1,7 @@
 ---
-title: 'The 132 Content Attributes of HTML'
-tags:
-  - hc
-  - hc-protocol
-
-hcChapter: 13
-
+title: The 132 Content Attributes of HTML
+canonical: https://www.toheeb.com/en/html-content-attributes/
+book-hc: 12
 ---
 
 <header>

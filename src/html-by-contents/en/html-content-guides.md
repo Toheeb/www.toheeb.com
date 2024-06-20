@@ -1,19 +1,17 @@
 ---
-title: 2+ Content Style Guides for HTML
-tags:
-  - hc
-  - hc-protocol
-
-hcChapter: 14
+title: 2 Content Guides for writing HTML
+canonical: https://www.toheeb.com/en/html-content-guides/
+book-hc: 13
 ---
 
-# 2+ Content Style Guides for HTML
+
+# 2 Content Guides for writing HTML
 
 HTML is declarative.
 
 It won't warn you of a bad markup talkless of a potential bad markup. 
 
-This style guide help you avoid issues on the long run. 
+This style guide aims to help you avoid issues on the long run. 
 
 <section>
   <h2>Avoid nesting Content Windows</h2>
@@ -21,17 +19,18 @@ This style guide help you avoid issues on the long run.
   Content Windows are mutually exclusive. Only one can be active at a time even if it has descendants. Hence, it's redundant to nest content windows.
 
   <figure>
-  
+
   ```html
   <body>
-    <dialog>
+    <dialog> <!-- -->
       <dialog></dialog>
     </dialog>
   </body>
   ``` 
+
   <figcaption>
 
-    The markup above is unsemantic to how it functions. A Primary Window (`body` element) parents a Secondary Window (`dialog` element) which parents another Secondary Window.
+  The markup above is unsemantic to how it functions. A Primary Window (`body` element) parents a Secondary Window (`dialog` element) which parents another Secondary Window.
   </figcaption>
   </figure>
 

@@ -1,11 +1,7 @@
 ---
 title: The 29 Content Connotations of HTML
-tags:
-  - hc
-  - hc-phrasing
-
-hcChapter: 11
-
+canonical: https://www.toheeb.com/en/html-content-connotations/
+book-hc: 11
 ---
 
 
@@ -15,7 +11,6 @@ hcChapter: 11
   # The 29 Content Connotations of HTML
 
   A Content Connotation conveys the expression behind a phrase in a [Content Block](/en/html-content-blocks/)
-
 
   <nav class="list-to-grid">
   <h2 id="outline">Outline</h2>
