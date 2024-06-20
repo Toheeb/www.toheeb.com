@@ -1,6 +1,4 @@
 {
     "permalink": "/en/{{ page.fileSlug.slice(3) }}/index.html",
-    "layout": "page.html",
-    "book": "hc",
-    "tags": "book-hc"
+    "layout": "page.html"
 }

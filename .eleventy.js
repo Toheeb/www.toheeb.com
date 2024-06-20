@@ -8,14 +8,6 @@ module.exports = function (config) {
   config.addPassthroughCopy({ "node_modules/@toheeb/prose/index.css": "/en/base.css" });
 
   config.addPlugin(eleventyNavigationPlugin);
-  
-  config.addUrlTransform(({url}) => {
-    const path = 'html-by-contents/en/';
-    
-    if (url.includes(path)) {
-      url.replace(path, 'en/')
-    }
-  })
 
   return {
     htmlTemplateEngine: "njk",
