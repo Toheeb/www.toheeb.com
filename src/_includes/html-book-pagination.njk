@@ -3,13 +3,13 @@
     <nav>
       <h2>Pagination</h2>
       
-      {% set hc = collections['book-hc'] %}
+      {% set hc = collections['book-hc-page-list'] %}
       {% set previousPost = hc | getPreviousCollectionItem %}
       {% set nextPost = hc | getNextCollectionItem %}
       {% set currentPost = hc | getCollectionItem %}
 
       <p>
-        {{currentPost.data.title}} is the Chapter {{ currentPost.data.bookHc }} of <a href="/en/html-by-contents/"> <cite>HTML by Contents</cite> </a>
+        {{currentPost.data.title}} is the Page {{ currentPost.data.bookHc }} of <a href="/en/html-by-contents/"> <cite>HTML by Contents</cite> </a>
       </p>
       
 
