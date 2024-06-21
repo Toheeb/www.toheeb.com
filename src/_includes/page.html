@@ -3,8 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ title + " | toheeb.com" }}</title>
+    
+    {% if book === "hc" %}
+    
+      <title>{{ title + " — HTML by Contents (Book) | toheeb.com" }}</title>
+    
+    {% else %}
+    
+      <title>{{ title + " | toheeb.com" }}</title>
 
+    {% endif %}
+    
     <meta name="description" content="{{ description }}" />
 
     <link
