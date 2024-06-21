@@ -1,6 +1,17 @@
 <footer>
-  <p>
-    Made in Nigeria 🇳🇬 by 
-    <a href="/en/designer/">{{site.designer}}</a>
-  </p>
+  {% if book === "hc" %}
+  
+    <p>
+      <a href="https://github.com/toheeb/html-by-contents.git/">HTML by Contents</a> © 2024 by <a href="https://www.toheeb.com/en/designer/">Toheeb Ogunbiyi</a> is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1) 
+    </p>
+  
+  {% else %}
+  
+    <p>
+      Made in Nigeria 🇳🇬 by 
+      <a href="/en/designer/">{{site.designer}}</a>
+    </p>
+    
+  {% endif %}
+  
 </footer>
