@@ -10,7 +10,9 @@ module.exports = function (config) {
   config.addPlugin(eleventyNavigationPlugin);
 
   config.addCollection("book-hc-page-list", api => {
-    return api.getFilteredByTags("book-hc-page").sort(ascendingOrder);
+    return api.getFilteredByTags("book-hc-page").sort((a, b) => {
+      return a.data["book-hc"] - b.data["book-hc"];
+    });
   })
   
   return {
@@ -23,7 +25,3 @@ module.exports = function (config) {
     },
   };
 };
-
-function ascendingOrder(a, b) {
-	return Number(a.data.bookHc) > Number(b.data.bookHc) ? 1 : -1
-}

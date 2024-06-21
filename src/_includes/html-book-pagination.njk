@@ -9,7 +9,7 @@
       {% set currentPost = hc | getCollectionItem %}
 
       <p>
-        {{currentPost.data.title}} is the Page {{ currentPost.data.bookHc }} of <a href="/en/html-by-contents/"> <cite>HTML by Contents</cite> </a>
+        {{currentPost.data.title}} is the Page {{ currentPost.data["book-hc"] }} of <a href="/en/html-by-contents/"> <cite>HTML by Contents</cite> </a>
       </p>
       
 
@@ -17,7 +17,7 @@
         {% if previousPost %} 
         <li>
           <p>
-            Previous Chapter: <a href="{{ previousPost.url }} "> {{ previousPost.data.title }}.</a> 
+            Previous Page: <a href="{{ previousPost.url }} "> {{ previousPost.data.title }}.</a> 
           </p>
         </li>
         {% endif %}
@@ -25,7 +25,7 @@
         {% if nextPost %} 
         <li>
           <p>
-            Next Chapter: <a href="{{ nextPost.url }} "> {{ nextPost.data.title }}.</a> 
+            Next Page: <a href="{{ nextPost.url }} "> {{ nextPost.data.title }}.</a> 
           </p>
         </li>
         {% endif %}
