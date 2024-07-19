@@ -1,0 +1,6 @@
+{
+  "permalink": "/en/{{ page.fileSlug.slice(3) }}/index.html",
+  "layout": "page.html",
+  "tags": "book-ss-page",
+  "book": "ss"
+}
