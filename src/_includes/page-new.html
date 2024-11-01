@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>{{ title + " | toheeb.com" }}</title>
+    
+    <meta name="description" content="{{ description }}" />
+
+    <link
+      rel="canonical"
+      href="{{ canonical if canonical else site.url + page.url }}"
+    />
+
+    <link rel="stylesheet" href="/en/css/mvp.css" title="MVP">
+    <link rel="alternate stylesheet" href="/en/css/tufte.css" title="Tufte">
+    <link rel="alternate stylesheet" href="/en/css/pico.css" title="Pico">
+
+    <meta property="og:title" content="{{title}}">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{{site.url + image}}" />
+    <meta property="og:url" content="{{site.url + page.url}}">
+    <meta name="twitter:card" content="summary_large_image">
+  
+    
+    <script
+      defer
+      src="https://analytics.eu.umami.is/script.js"
+      data-website-id="ee6b55fc-1b3e-49db-a773-19541eb400b5"
+    ></script>
+  </head>
+
+  <body>
+    <div class="window-primary">
+      <main>
+
+        {{ content | safe }}
+        
+      </main>
+    </div>
+  </body>
+</html>
