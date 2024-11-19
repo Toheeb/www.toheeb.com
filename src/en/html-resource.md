@@ -2,7 +2,6 @@
 layout: page.html
 title: HTML by Contents (not Elements)
 image: '/images/og.png'
-siteNav: false
 ---
 
 # HTML by Contents (not Elements)
@@ -17,4 +16,4 @@ Element-first presentation forces us to think backwards. It increases our chance
 
 This 10-page resource, HTML by Contents, matches our mental model with a content-first presentation and baked-in semantics.
 
-(pages coming soon)
+1. [30 HTML Content Metas](/en/html-content-metas/)

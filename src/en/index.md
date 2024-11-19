@@ -6,10 +6,18 @@ siteNav: false
 
 # {{title}}
 
-Start with: [My vision for the web's future](/en/vision/)
+1. [Unlocking the web's promise](/en/promise/)
+
+2. [HTML by Contents (not Elements)](/en/html-resource/)
+
+3. [30 HTML Content Metas](/en/html-content-metas/)
+
+<details>
+<summary>Dump</summary>
 
 {% for post in collections.all %}
 
 - [{{post.data.title}}]({{post.url}})
 
 {% endfor %}
+</details>

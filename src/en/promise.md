@@ -2,7 +2,6 @@
 layout: page.html
 title: Unlocking the web's promise
 image: '/images/og.png'
-siteNav: false
 ---
 
 # Unlocking the web's promise
