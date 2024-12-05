@@ -12,6 +12,8 @@ siteNav: false
 
 3. [30 HTML Content Metas](/en/html-content-metas/)
 
+4. [132 HTML Content Attributes](/en/html-content-metas/)
+
 <details>
 <summary>Dump</summary>
 

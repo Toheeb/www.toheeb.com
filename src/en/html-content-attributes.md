@@ -1,8 +1,8 @@
 ---
 title: The 132 Content Attributes of HTML
 canonical: https://www.toheeb.com/en/html-content-attributes/
-book-hc: 12
 ---
+
 
 <header>
 
@@ -15,253 +15,131 @@ book-hc: 12
 
   The 132 Content Attributes are as follows:
 
-  - [`class`](#attribute-class)
-
-  - [`id`](#attribute-id)
-
-  - [`lang`](#attribute-lang)
-
-  - [`charset`](#attribute-charset)
-
-  - [`dir`](#attribute-dir)
-
-  - [`translate`](#attribute-translate)
-
-  - [`title`](#attribute-title)
-
-  - [`rel`](#attribute-rel)
-
-  - [`type`](#attribute-type)
-
-  - [`hreflang`](#attribute-hreflang)
-
-  - [`as`](#attribute-as)
-
-  - [`blocking`](#attribute-blocking)
-
-  - [`nonce`](#attribute-nonce)
-
-  - [`fetchpriority`](#attribute-fetchpriority)
-  
-  - [`crossorigin`](#attribute-crossorigin)
-
-  - [`referrerpolicy`](#attribute-referrerpolicy)
-
-  - [`integrity`](#attribute-integrity)
-
-  - [`async`](#attribute-async)
-
-  - [`defer`](#attribute-defer)
-
-  - [`nomodule`](#attribute-nomodule)
-  
-  - [`media`](#attribute-media)
-
-  - [`color`](#attribute-color)
-
-  - [`http-equiv`](#attribute-http-equiv)
-
-  - [`content`](#attribute-content)
-
-  - [`shadowrootmode`](#attribute-shadowrootmode)
-
-  - [`shadowrootdelegatefocus`](#attribute-shadowrootdelegatefocus)
-  
-  - [`is`](#attribute-is)
-
-  - [`slot`](#attribute-slot)
-
-  - [`data-*`](#attribute-data-*)
-
-  - [`usemap`](#attribute-usemap)
-
-  - [`ismap`](#attribute-ismap)
-
-  - [`srcset`](#attribute-srcset)
-
-  - [`imagesrcset`](#attribute-imagesrcset)
-
-  - [`src`](#attribute-src)
-
-  - [`data`](#attribute-data)
-
-  - [`loading`](#attribute-loading)
-
-  - [`decoding`](#attribute-decoding)
-  
-  - [`shape`](#attribute-shape)
-
-  - [`width`](#attribute-width)
-
-  - [`imagesizes`](#attribute-imagesizes)
-
-  - [`sizes`](#attribute-sizes)
-
-  - [`height`](#attribute-height)
-
-  - [`coords`](#attribute-coords)
-
-  - [`alt`](#attribute-alt)
-
-  - [`poster`](#attribute-poster)
-
-  - [`preload`](#attribute-preload)
-
-  - [`autoplay`](#attribute-autoplay)
-
-  - [`loop`](#attribute-loop)
-
-  - [`muted`](#attribute-muted)
-
-  - [`playsinline`](#attribute-playsinline)
-
-  - [`srclang`](#attribute-srclang)
-  
-  - [`default`](#attribute-default)
-
-  - [`controls`](#attribute-controls)
-
-  - [`kind`](#attribute-kind)
-
-  - [`label`](#attribute-label)
-
-  - [`srcdoc`](#attribute-srcdoc)
-
-  - [`sandbox`](#attribute-sandbox)
-
-  - [`allowfullscreen`](#attribute-allowfullscreen)
-
-  - [`allow`](#attribute-allow)
-
-  - [`draggable`](#attribute-draggable)
-
-  - [`contenteditable`](#attribute-contenteditable)
-
-  - [`for`](#attribute-for)
-
-  - [`name`](#attribute-name)
-
-  - [`dirname`](#attribute-dirname)
-
-  - [`form`](#attribute-form)
-
-  - [`accept-charset`](#attribute-accept-charset)
-
-  - [`action`](#attribute-action)
-
-  - [`formaction`](#attribute-formaction)
-
-  - [`enctype`](#attribute-enctype)
-
-  - [`formenctype`](#attribute-formenctype)
-
-  - [`method`](#attribute-method)
-
-  - [`formmethod`](#attribute-formmethod)
-
-  - [`novalidate`](#attribute-novalidate)
-
-  - [`formnovalidate`](#attribute-formnovalidate)
-
-  - [`target`](#attribute-target)
-
-  - [`formtarget`](#attribute-formtarget)
-
-  - [`autofocus`](#attribute-autofocus)
-
-  - [`tabindex`](#attribute-tabindex)
-
-  - [`accesskey`](#attribute-accesskey)
-
-  - [`enterhintkey`](#attribute-enterhintkey)
-
-  - [`inputmode`](#attribute-inputmode)
-
-  - [`spellcheck`](#attribute-spellcheck)
-
-  - [`autocomplete`](#attribute-autocomplete)
-
-  - [`list`](#attribute-list)
-
-  - [`autocapitalize`](#attribute-autocapitalize)
-
-  - [`wrap`](#attribute-wrap)
-
-  - [`disabled`](#attribute-disabled)
-  
-  - [`readonly`](#attribute-readonly)
-
-  - [`required`](#attribute-required)
-
-  - [`multiple`](#attribute-multiple)
-
-  - [`checked`](#attribute-checked)
-
-  - [`selected`](#attribute-selected)
-
-  - [`maxlength`](#attribute-maxlength)
-
-  - [`minlength`](#attribute-minlength)
-
-  - [`size`](#attribute-size)
-
-  - [`pattern`](#attribute-pattern)
-
-  - [`placeholder`](#attribute-placeholder)
-
-  - [`value`](#attribute-value)
-
-  - [`min`](#attribute-min)
-
-  - [`step`](#attribute-step)
-
-  - [`max`](#attribute-max)
-
-  - [`low`](#attribute-low)
-
-  - [`high`](#attribute-high)
-
-  - [`optimum`](#attribute-optimum)
+  - [`abbr`](#attribute-abbr)
 
   - [`accept`](#attribute-accept)
 
-  - [`start`](#attribute-start)
+  - [`accept-charset`](#attribute-accept-charset)
 
-  - [`reversed`](#attribute-reversed)
+  - [`accesskey`](#attribute-accesskey)
 
-  - [`abbr`](#attribute-abbr)
+  - [`action`](#attribute-action)
 
-  - [`scope`](#attribute-scope)
+  - [`allow`](#attribute-allow)
 
-  - [`headers`](#attribute-headers)
+  - [`allowfullscreen`](#attribute-allowfullscreen)
+
+  - [`alt`](#attribute-alt)
+
+  - [`as`](#attribute-as)
+
+  - [`async`](#attribute-async)
+
+  - [`autocapitalize`](#attribute-autocapitalize)
+
+  - [`autocomplete`](#attribute-autocomplete)
+
+  - [`autofocus`](#attribute-autofocus)
+
+  - [`autoplay`](#attribute-autoplay)
+
+  - [`blocking`](#attribute-blocking)
+
+  - [`charset`](#attribute-charset)
+
+  - [`checked`](#attribute-checked)
+
+  - [`cite`](#attribute-cite)
+
+  - [`class`](#attribute-class)
+
+  - [`color`](#attribute-color)
 
   - [`cols`](#attribute-cols)
 
-  - [`span`](#attribute-span)
-
   - [`colspan`](#attribute-colspan)
 
-  - [`rows`](#attribute-rows)
+  - [`content`](#attribute-content)
 
-  - [`open`](#attribute-open)
+  - [`controls`](#attribute-controls)
 
-  - [`href`](#attribute-href)
+  - [`coords`](#attribute-coords)
 
-  - [`download`](#attribute-download)
+  - [`contenteditable`](#attribute-contenteditable)
+  
+  - [`crossorigin`](#attribute-crossorigin)
 
-  - [`ping`](#attribute-ping)
+  - [`data-*`](#attribute-data-*)
 
-  - [`cite`](#attribute-cite)
+  - [`data`](#attribute-data)
   
   - [`datetime`](#attribute-datetime)
 
-  - [`inert`](#attribute-inert)
+  - [`decoding`](#attribute-decoding)
+  
+  - [`default`](#attribute-default)
+
+  - [`defer`](#attribute-defer)
+
+  - [`dir`](#attribute-dir)
+
+  - [`dirname`](#attribute-dirname)
+
+  - [`disabled`](#attribute-disabled)
+
+  - [`download`](#attribute-download)
+
+  - [`draggable`](#attribute-draggable)
+
+  - [`enctype`](#attribute-enctype)
+
+  - [`enterhintkey`](#attribute-enterhintkey)
+
+  - [`fetchpriority`](#attribute-fetchpriority)
+
+  - [`for`](#attribute-for)
+
+  - [`form`](#attribute-form)
+
+  - [`formaction`](#attribute-formaction)
+
+  - [`formenctype`](#attribute-formenctype)
+
+  - [`formmethod`](#attribute-formmethod)
+
+  - [`formnovalidate`](#attribute-formnovalidate)
+
+  - [`formtarget`](#attribute-formtarget)
+
+  - [`headers`](#attribute-headers)
+
+  - [`height`](#attribute-height)
 
   - [`hidden`](#attribute-hidden)
 
-  - [`itemscope`](#attribute-itemscope)
+  - [`high`](#attribute-high)
 
-  - [`itemtype`](#attribute-itemtype)
+  - [`href`](#attribute-href)
+
+  - [`hreflang`](#attribute-hreflang)
+
+  - [`http-equiv`](#attribute-http-equiv)
+
+  - [`id`](#attribute-id)
+
+  - [`imagesizes`](#attribute-imagesizes)
+
+  - [`imagesrcset`](#attribute-imagesrcset)
+
+  - [`inert`](#attribute-inert)
+
+  - [`inputmode`](#attribute-inputmode)
+
+  - [`integrity`](#attribute-integrity)
+
+  - [`is`](#attribute-is)
+
+  - [`ismap`](#attribute-ismap)
 
   - [`itemid`](#attribute-itemid)
 
@@ -269,13 +147,133 @@ book-hc: 12
 
   - [`itemref`](#attribute-itemref)
 
+  - [`itemscope`](#attribute-itemscope)
+
+  - [`itemtype`](#attribute-itemtype)
+
+  - [`kind`](#attribute-kind)
+
+  - [`label`](#attribute-label)
+
+  - [`lang`](#attribute-lang)
+
+  - [`list`](#attribute-list)
+
+  - [`loading`](#attribute-loading)
+
+  - [`loop`](#attribute-loop)
+
+  - [`low`](#attribute-low)
+
+  - [`max`](#attribute-max)
+
+  - [`maxlength`](#attribute-maxlength)
+
+  - [`media`](#attribute-media)
+
+  - [`method`](#attribute-method)
+
+  - [`min`](#attribute-min)
+
+  - [`minlength`](#attribute-minlength)
+
+  - [`muted`](#attribute-muted)
+
+  - [`multiple`](#attribute-multiple)
+
+  - [`name`](#attribute-name)
+
+  - [`nomodule`](#attribute-nomodule)
+
+  - [`nonce`](#attribute-nonce)
+
+  - [`novalidate`](#attribute-novalidate)
+
+  - [`open`](#attribute-open)
+
+  - [`optimum`](#attribute-optimum)
+
+  - [`pattern`](#attribute-pattern)
+
+  - [`ping`](#attribute-ping)
+
+  - [`placeholder`](#attribute-placeholder)
+
+  - [`playsinline`](#attribute-playsinline)
+
   - [`popover`](#attribute-popover)
 
   - [`popovertarget`](#attribute-popovertarget)
 
   - [`popovertargetaction`](#attribute-popovertargetaction)
 
-  - [`popovertargetaction`](#attribute-popovertargetaction)
+  - [`poster`](#attribute-poster)
+
+  - [`preload`](#attribute-preload)
+  
+  - [`readonly`](#attribute-readonly)
+  
+  - [`referrerpolicy`](#attribute-referrerpolicy)
+
+  - [`rel`](#attribute-rel)
+
+  - [`required`](#attribute-required)
+
+  - [`reversed`](#attribute-reversed)
+
+  - [`rows`](#attribute-rows)
+
+  - [`sandbox`](#attribute-sandbox)
+
+  - [`scope`](#attribute-scope)
+
+  - [`selected`](#attribute-selected)
+
+  - [`shadowrootdelegatefocus`](#attribute-shadowrootdelegatefocus)
+
+  - [`shadowrootmode`](#attribute-shadowrootmode)
+  
+  - [`shape`](#attribute-shape)
+
+  - [`size`](#attribute-size)
+
+  - [`sizes`](#attribute-sizes)
+
+  - [`slot`](#attribute-slot)
+
+  - [`span`](#attribute-span)
+
+  - [`spellcheck`](#attribute-spellcheck)
+  
+  - [`src`](#attribute-src)
+
+  - [`srcdoc`](#attribute-srcdoc)
+
+  - [`srclang`](#attribute-srclang)
+
+  - [`srcset`](#attribute-srcset)
+
+  - [`start`](#attribute-start)
+
+  - [`step`](#attribute-step)
+
+  - [`tabindex`](#attribute-tabindex)
+
+  - [`target`](#attribute-target)
+
+  - [`title`](#attribute-title)
+
+  - [`translate`](#attribute-translate)
+
+  - [`type`](#attribute-type)
+
+  - [`usemap`](#attribute-usemap)
+
+  - [`value`](#attribute-value)
+
+  - [`width`](#attribute-width)
+
+  - [`wrap`](#attribute-wrap)
 
   </nav>
 
