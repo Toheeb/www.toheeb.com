@@ -1,4 +1,5 @@
 ---
+layout: page.html
 title: The 132 Content Attributes of HTML
 canonical: https://www.toheeb.com/en/html-content-attributes/
 ---
