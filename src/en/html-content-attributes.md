@@ -224,6 +224,8 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
   - [`rows`](#attribute-rows)
 
+  - [`rowspan`](#attribute-rowspan)
+
   - [`sandbox`](#attribute-sandbox)
 
   - [`scope`](#attribute-scope)
@@ -257,6 +259,8 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
   - [`start`](#attribute-start)
 
   - [`step`](#attribute-step)
+
+  - [`style`](#attribute-style)
 
   - [`tabindex`](#attribute-tabindex)
 

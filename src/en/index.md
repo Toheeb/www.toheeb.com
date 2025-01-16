@@ -6,6 +6,9 @@ siteNav: false
 
 # {{title}}
 
+<details>
+<summary>Recycle Bin</summary>
+
 1. [Unlocking the web's promise](/en/promise/)
 
 2. [HTML by Contents (not Elements)](/en/html-resource/)
@@ -13,9 +16,6 @@ siteNav: false
 3. [30 HTML Content Metas](/en/html-content-metas/)
 
 4. [132 HTML Content Attributes](/en/html-content-metas/)
-
-<details>
-<summary>Dump</summary>
 
 {% for post in collections.all %}
 
