@@ -6,6 +6,8 @@ siteNav: false
 
 # {{title}}
 
+- [HTML: How 8 elements create 32+2 kinds of metadata](/en/html-metadata-elements/)
+
 <details>
 <summary>Recycle Bin</summary>
 
