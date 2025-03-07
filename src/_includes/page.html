@@ -4,15 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    {% if book === "hc" %}
-    
-      <title>{{ title + " — HTML by Contents (Book) | toheeb.com" }}</title>
-    
-    {% else %}
-    
-      <title>{{ title + " | toheeb.com" }}</title>
-
-    {% endif %}
+    <title>{{ title + " | toheeb.com" }}</title>
     
     <meta name="description" content="{{ description }}" />
 
@@ -21,18 +13,47 @@
       href="{{ canonical if canonical else site.url + page.url }}"
     />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@toheeb/prose@0.2.0/index.min.css">
-    
+    <meta property="og:title" content="{{title}}">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{{site.url + image}}" />
+    <meta property="og:url" content="{{site.url + page.url}}">
+    <meta name="twitter:card" content="summary_large_image">
+  
+    <style>
+      body {
+        font: 1rem/1.7 sans-serif;
+        padding: 1.5em;
+        margin: 0 auto;
+        background: #fefefe;
+        color: #555;
+        max-width: 36em;
+      }
+
+      h1 {
+        font-size: 2em;
+        margin: 2em 0 .5em;
+      }
+      
+      h2 {
+        font-size: 1.5em;
+        margin: 2em 0 .5em;
+      }
+
+      pre {
+        max-width: 100%;
+        overflow: auto;
+      }
+
+    </style>
     <script
       defer
       src="https://analytics.eu.umami.is/script.js"
       data-website-id="ee6b55fc-1b3e-49db-a773-19541eb400b5"
     ></script>
 
-    <link rel="stylesheet" href="/en/base.css" />
-    <link rel="stylesheet" href="/en/site.css" />
-
-    {{ style | safe }}
+    {% if pageScript %}
+      {{ pageScript | safe }}
+    {% endif %}
   </head>
 
   <body>
@@ -49,7 +70,6 @@
           
         </section>
         
-        {% include './site-footer.njk' %}
       </main>
     </div>
   </body>
