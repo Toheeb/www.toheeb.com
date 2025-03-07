@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      padding: 3em;
+      display: grid;
+      gap: 3em;
+    }
+
+    ol {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-flow: row wrap;
+      gap: 1em;
+      list-style: none;
+    }
+
+    ::marker {
+      font-size: .5em;
+    }
+
+    li {
+      flex: 1 1 auto;
+    }
+
+    p {
+      margin: 0;
+    }
+    
+    a {
+      color: #333;
+      border: 1px solid #bbb;
+      text-decoration: none;
+      border-radius: .75em;
+      display: block;
+      text-align: center;
+      padding: 2em 1em;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <select name="" id="">
+    <option value="">Select Target</option>
+    <option value="base">Base</option>
+    <option value="link">Link</option>
+    <option value="meta">Meta</option>
+    <option value="noscript">Noscript</option>
+    <option value="script">Script</option>
+    <option value="style">Style</option>
+    <option value="template">Template</option>
+    <option value="title">Title</option>
+    <option value="metadata">Metadata</option>
+  </select>
+
+  <ol reversed>
+    <li>
+      <p><a href="#attribute-abbr"><code>abbr</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-accept"><code>accept</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-accept-charset"><code>accept-charset</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-accesskey"><code>accesskey</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-action"><code>action</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-allow"><code>allow</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-allowfullscreen"><code>allowfullscreen</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-alt"><code>alt</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-as"><code>as</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-async"><code>async</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-autocapitalize"><code>autocapitalize</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-autocomplete"><code>autocomplete</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-autofocus"><code>autofocus</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-autoplay"><code>autoplay</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-blocking"><code>blocking</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-charset"><code>charset</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-checked"><code>checked</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-cite"><code>cite</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-class"><code>class</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-color"><code>color</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-cols"><code>cols</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-colspan"><code>colspan</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-content"><code>content</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-controls"><code>controls</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-coords"><code>coords</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-contenteditable"><code>contenteditable</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-crossorigin"><code>crossorigin</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-data-*"><code>data-*</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-data"><code>data</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-datetime"><code>datetime</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-decoding"><code>decoding</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-default"><code>default</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-defer"><code>defer</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-dir"><code>dir</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-dirname"><code>dirname</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-disabled"><code>disabled</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-download"><code>download</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-draggable"><code>draggable</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-enctype"><code>enctype</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-enterhintkey"><code>enterhintkey</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-fetchpriority"><code>fetchpriority</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-for"><code>for</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-form"><code>form</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-formaction"><code>formaction</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-formenctype"><code>formenctype</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-formmethod"><code>formmethod</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-formnovalidate"><code>formnovalidate</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-formtarget"><code>formtarget</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-headers"><code>headers</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-height"><code>height</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-hidden"><code>hidden</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-high"><code>high</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-href"><code>href</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-hreflang"><code>hreflang</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-http-equiv"><code>http-equiv</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-id"><code>id</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-imagesizes"><code>imagesizes</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-imagesrcset"><code>imagesrcset</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-inert"><code>inert</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-inputmode"><code>inputmode</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-integrity"><code>integrity</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-is"><code>is</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-ismap"><code>ismap</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-itemid"><code>itemid</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-itemprop"><code>itemprop</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-itemref"><code>itemref</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-itemscope"><code>itemscope</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-itemtype"><code>itemtype</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-kind"><code>kind</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-label"><code>label</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-lang"><code>lang</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-list"><code>list</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-loading"><code>loading</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-loop"><code>loop</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-low"><code>low</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-max"><code>max</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-maxlength"><code>maxlength</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-media"><code>media</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-method"><code>method</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-min"><code>min</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-minlength"><code>minlength</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-muted"><code>muted</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-multiple"><code>multiple</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-name"><code>name</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-nomodule"><code>nomodule</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-nonce"><code>nonce</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-novalidate"><code>novalidate</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-open"><code>open</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-optimum"><code>optimum</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-pattern"><code>pattern</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-ping"><code>ping</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-placeholder"><code>placeholder</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-playsinline"><code>playsinline</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-popover"><code>popover</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-popovertarget"><code>popovertarget</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-popovertargetaction"><code>popovertargetaction</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-poster"><code>poster</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-preload"><code>preload</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-readonly"><code>readonly</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-referrerpolicy"><code>referrerpolicy</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-rel"><code>rel</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-required"><code>required</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-reversed"><code>reversed</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-rows"><code>rows</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-rowspan"><code>rowspan</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-sandbox"><code>sandbox</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-scope"><code>scope</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-selected"><code>selected</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-shadowrootdelegatesfocus"><code>shadowrootdelegatesfocus</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-shadowrootserializable"><code>shadowrootserializable</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-shadowrootclonable"><code>shadowrootclonable</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-shadowrootmode"><code>shadowrootmode</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-shape"><code>shape</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-size"><code>size</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-sizes"><code>sizes</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-slot"><code>slot</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-span"><code>span</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-spellcheck"><code>spellcheck</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-src"><code>src</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-srcdoc"><code>srcdoc</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-srclang"><code>srclang</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-srcset"><code>srcset</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-start"><code>start</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-step"><code>step</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-style"><code>style</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-tabindex"><code>tabindex</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-target"><code>target</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-title"><code>title</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-translate"><code>translate</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-type"><code>type</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-usemap"><code>usemap</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-value"><code>value</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-width"><code>width</code></a></p>
+    </li>
+    <li>
+      <p><a href="#attribute-wrap"><code>wrap</code></a></p>
+    </li>
+  </ol>
+
+
+  <script>
+
+    const meta_element = {
+      "": {
+        "label": "Add Legacy Meta",
+        "comp_attrs": [],
+        "opt_attrs": [
+          "accesskey",
+          "autocapitalize",
+          "autofocus",
+          "contenteditable",
+          "dir",
+          "draggable",
+          "enterkeyhint",
+          "hidden",
+          "inert",
+          "inputmode",
+          "is",
+          "itemid",
+          "itemprop",
+          "itemref",
+          "itemscope",
+          "itemtype",
+          "lang",
+          "nonce",
+          "popover",
+          "spellcheck",
+          "style",
+          "tabindex",
+          "title",
+          "translate",
+          "data-",
+        ],
+      },
+      "base": {
+        "label": "Base",
+        "noscript": false,
+        "singleton": true,
+        "void": true,
+        "comp_attrs": [],
+        "opt_attrs": [
+          "href",
+          "target",
+        ]
+      },
+      "link": {
+        "label": "Link",
+        "noscript": true,
+        "singleton": false,
+        "void": true,
+        "comp_attrs": [],
+        "opt_attrs": [
+          "href",
+          "crossorigin",
+          "rel",
+          "media",
+          "integrity",
+          "hreflang",
+          "type",
+          "referrerpolicy",
+          "sizes",
+          "imagesrcset",
+          "imagesizes",
+          "as",
+          "blocking",
+          "color",
+          "disabled",
+          "fetchpriority",
+        ],
+      },
+      "meta": {
+        "label": "Meta",
+        "noscript": true,
+        "singleton": false,
+        "void": true,
+        "comp_attrs": [],
+        "opt_attrs": [
+          "name",
+          "http-equiv",
+          "content",
+          "charset",
+          "media",
+        ],
+      },
+      "noscript": {
+        "label": "Noscript",
+        "noscript": false,
+        "singleton": false,
+        "void": false,
+        "comp_attrs": [],
+        "opt_attrs": [],
+      },
+      "script": {
+        "label": "Script",
+        "noscript": false,
+        "singleton": false,
+        "void": false,
+        "comp_attrs": [],
+        "opt_attrs": [
+          "src",
+          "type",
+          "nomodule",
+          "async",
+          "defer",
+          "crossorigin",
+          "integrity",
+          "referrerpolicy",
+          "blocking",
+          "fetchpriority",
+        ],
+      },
+      "style": {
+        "label": "Style",
+        "noscript": true,
+        "singleton": false,
+        "void": false,
+        "comp_attrs": [],
+        "opt_attrs": [
+          "media",
+          "blocking",
+        ],
+      },
+      "template": {
+        "label": "Template",
+        "noscript": false,
+        "singleton": false,
+        "void": false,
+        "comp_attrs": [],
+        "opt_attrs": [
+          "shadowrootmode",
+          "shadowrootdelegatesfocus",
+          "shadowrootclonable",
+          "shadowrootserializable",
+        ],
+      },
+      "title": {
+        "label": "Title",
+        "noscript": false,
+        "singleton": true,
+        "void": false,
+        "comp_attrs": [],
+        "opt_attrs": [],
+      }
+
+    }
+
+    document.querySelector("select").addEventListener("change", e => {
+      const value = e.target.value
+      let attrs
+
+      if (value === "metadata") {
+        attrs = [
+          ...meta_element["base"]["opt_attrs"],
+          ...meta_element["link"]["opt_attrs"],
+          ...meta_element["meta"]["opt_attrs"],
+          ...meta_element["noscript"]["opt_attrs"],
+          ...meta_element["script"]["opt_attrs"],
+          ...meta_element["style"]["opt_attrs"],
+          ...meta_element["template"]["opt_attrs"],
+          ...meta_element["title"]["opt_attrs"],
+        ]
+      } else {
+        attrs = meta_element[e.target.value]["opt_attrs"]
+      }
+      
+      console.log("Count:: ", attrs.length)
+      const lis = document.querySelectorAll("li")
+
+      lis.forEach(li => {
+        if (attrs.includes(li.textContent.trim())) {
+          li.style.display = "block"
+        } else {
+          li.style.display = "none"
+        }
+      })
+    })
+
+  </script>
+
+  <!-- <script>
+    const attrs = {
+      "abbr": {
+        "label": "Abbreviation",
+        "global": false,
+      },
+      "accept": {
+        "label": "Acceptable Upload",
+        "global": false,
+      },
+      "accept-charset": {
+        "label": "Form Character Set",
+        "global": false,
+      },
+      "accesskey": {
+        "label": "Access Key(s)",
+        "global": true,
+      },
+      "action": {
+        "label": "Form Handler",
+        "global": false,
+      },
+      "allow": {
+        "label": "Permission Policy",
+        "global": false,
+      },
+      "allowfullscreen": {
+        "label": "Allow Fullscreen",
+        "global": false,
+      },
+      "alt": {
+        "label": "Alternative Text",
+        "global": false,
+      },
+      "as": {
+        "label": "Preload Type",
+        "global": false,
+      },
+      "async": {
+        "label": "Load Ascrynchronously",
+        "global": false,
+      },
+      "autocapitalize": {
+        "label": "Auto Capitalize",
+        "global": true,
+      },
+      "autocomplete": {
+        "label": "Auto Complete",
+        "global": false,
+      },
+      "autofocus": {
+        "label": "Auto Focus",
+        "global": true,
+      },
+      "autoplay": {
+        "label": "Auto Play",
+        "global": false,
+      },
+      "blocking": {
+        "label": "Block",
+        "global": false,
+      },
+      "charset": {
+        "label": "Character Set",
+        "global": false,
+      },
+      "check": {
+        "label": "Check Form",
+        "global": false,
+      },
+      "cite": {
+        "label": "Citation Source",
+        "global": false,
+      },
+      "class": {
+        "label": "Class ID",
+        "global": false,
+      },
+      "color": {
+        "label": "Icon Color",
+        "global": false,
+      },
+      "cols": {
+        "label": "Line Width",
+        "global": false,
+      },
+      "colspan": {
+        "label": "Column Span",
+        "global": false,
+      },
+      "content": {
+        "label": "Content",
+        "global": false,
+      },
+      "controls": {
+        "label": "Show Controls",
+        "global": false,
+      },
+      "coords": {
+        "label": "Coordinates",
+        "global": false,
+      },
+      "contenteditable": {
+        "label": "Enable Editing",
+        "global": true,
+      },
+      "crossorigin": {
+        "label": "Cross Origin",
+        "global": false,
+      },
+      "data": {
+        "label": "Data",
+        "global": false,
+      },
+      "data-": {
+        "label": "Custom Attribute",
+        "global": true,
+      },
+      "data-element": {
+        "label": "Element",
+        "global": false,
+      },
+      "datetime": {
+        "label": "Date and Time",
+        "global": false,
+      },
+      "decoding": {
+        "label": "Decoding Model",
+        "global": false,
+      },
+      "default": {
+        "label": "Set Default",
+        "global": false,
+      },
+      "defer": {
+        "label": "Defer Script",
+        "global": false,
+      },
+      "dir": {
+        "label": "Direction",
+        "global": true,
+      },
+      "dirname": {
+        "label": "Dirname",
+        "global": false,
+      },
+      "disabled": {
+        "label": "Disable Form",
+        "global": false,
+      },
+      "download": {
+        "label": "Enable Download",
+        "global": false,
+      },
+      "draggable": {
+        "label": "Allow Dragging",
+        "global": true,
+      },
+      "enctype": {
+        "label": "Encoding Type",
+        "global": false,
+      },
+      "enterkeyhint": {
+        "label": "Enter Key Hint",
+        "global": true,
+      },
+      "fetchpriority": {
+        "label": "Fetch Priority",
+        "global": false,
+      },
+      "for": {
+        "label": "Form",
+        "global": false,
+      },
+      "form": {
+        "label": "Form Container",
+        "global": false,
+      },
+      "formaction": {
+        "label": "Form Handler",
+        "global": false,
+      },
+      "formenctype": {
+        "label": "Data Format",
+        "global": false,
+      },
+      "formmethod": {
+        "label": "Form Method",
+        "global": false,
+      },
+      "formnovalidate": {
+        "label": "Disable Validation",
+        "global": false,
+      },
+      "formtarget": {
+        "label": "Target Window",
+        "global": false,
+      },
+      "headers": {
+        "label": "Table Headers",
+        "global": false,
+      },
+      "height": {
+        "label": "Height",
+        "global": false,
+      },
+      "hidden": {
+        "label": "Hide Content",
+        "global": true,
+      },
+      "high": {
+        "label": "High Point",
+        "global": false,
+      },
+      "href": {
+        "label": "Address",
+        "global": false,
+      },
+      "hreflang": {
+        "label": "Address Language",
+        "global": false,
+      },
+      "http-equiv": {
+        "label": "Pragma Directive",
+        "global": false,
+      },
+      "id": {
+        "label": "ID",
+        "global": false,
+      },
+      "imagesizes": {
+        "label": "Source Sizes",
+        "global": false,
+      },
+      "imagesrcset": {
+        "label": "Source Descriptors",
+        "global": false,
+      },
+      "inert": {
+        "label": "Inert",
+        "global": true,
+      },
+      "inputmode": {
+        "label": "Input Mode",
+        "global": true,
+      },
+      "integrity": {
+        "label": "Integrity Text",
+        "global": false,
+      },
+      "is": {
+        "label": "Custom Element Name",
+        "global": true,
+      },
+      "ismap": {
+        "label": "Access Map",
+        "global": false,
+      },
+      "itemid": {
+        "label": "Item ID",
+        "global": true,
+      },
+      "itemprop": {
+        "label": "Item Name",
+        "global": true,
+      },
+      "itemref": {
+        "label": "Item References",
+        "global": true,
+      },
+      "itemscope": {
+        "label": "Item Scope",
+        "global": true,
+      },
+      "itemtype": {
+        "label": "Item Type",
+        "global": true,
+      },
+      "kind": {
+        "label": "Type",
+        "global": false,
+      },
+      "label": {
+        "label": "Label",
+        "global": false,
+      },
+      "lang": {
+        "label": "Language",
+        "global": true,
+      },
+      "list": {
+        "label": "Data List",
+        "global": false,
+      },
+      "loading": {
+        "label": "Loading Mechanism",
+        "global": false,
+      },
+      "loop": {
+        "label": "Loop",
+        "global": false,
+      },
+      "low": {
+        "label": "Low Point",
+        "global": false,
+      },
+      "max": {
+        "label": "Maximum Point",
+        "global": false,
+      },
+      "maxlength": {
+        "label": "Maximum Length",
+        "global": false,
+      },
+      "media": {
+        "label": "Media",
+        "global": false,
+      },
+      "method": {
+        "label": "Form Method",
+        "global": false,
+      },
+      "min": {
+        "label": "Minimum Point",
+        "global": false,
+      },
+      "minlength": {
+        "label": "Minimum Length",
+        "global": false,
+      },
+      "mute": {
+        "label": "Mute",
+        "global": false,
+      },
+      "multiple": {
+        "label": "Allow Multiple",
+        "global": false,
+      },
+      "name": {
+        "label": "Name",
+        "global": false,
+      },
+      "nomodule": {
+        "label": "No Module",
+        "global": false,
+      },
+      "nonce": {
+        "label": "Nonce",
+        "global": true,
+      },
+      "novalidate": {
+        "label": "Disable Validation",
+        "global": false,
+      },
+      "open": {
+        "label": "Open",
+        "global": false,
+      },
+      "optimum": {
+        "label": "Optimum Point",
+        "global": false,
+      },
+      "pattern": {
+        "label": "Pattern",
+        "global": false,
+      },
+      "ping": {
+        "label": "Ping Addresses",
+        "global": false,
+      },
+      "placeholder": {
+        "label": "Placeholder",
+        "global": false,
+      },
+      "playsinline": {
+        "label": "Play Inline",
+        "global": false,
+      },
+      "popover": {
+        "label": "Enable Popover",
+        "global": true,
+      },
+      "popovertarget": {
+        "label": "Popover Target",
+        "global": false,
+      },
+      "popovertargetaction": {
+        "label": "Popover Target Visibility",
+        "global": false,
+      },
+      "poster": {
+        "label": "Poster",
+        "global": false,
+      },
+      "preload": {
+        "label": "Preload",
+        "global": false,
+      },
+      "readonly": {
+        "label": "Readonly",
+        "global": false,
+      },
+      "referrerpolicy": {
+        "label": "Referrer Policy",
+        "global": false,
+      },
+      "rel": {
+        "label": "Relation",
+        "global": false,
+      },
+      "required": {
+        "label": "Required",
+        "global": false,
+      },
+      "reversed": {
+        "label": "Reversed",
+        "global": false,
+      },
+      "rows": {
+        "label": "Rows",
+        "global": false,
+      },
+      "sandbox": {
+        "label": "Sandbox",
+        "global": false,
+      },
+      "scope": {
+        "label": "Scope",
+        "global": false,
+      },
+      "selected": {
+        "label": "Selected",
+        "global": false,
+      },
+      "shadowrootdelegatefocus": {
+        "label": "Shadowroot Focus",
+        "global": false,
+      },
+      "shadowrootmode": {
+        "label": "Shadowroot Mode",
+        "global": false,
+      },
+      "shape": {
+        "label": "Shape",
+        "global": false,
+      },
+      "size": {
+        "label": "Size",
+        "global": false,
+      },
+      "sizes": {
+        "label": "Sizes",
+        "global": false,
+      },
+      "slot": {
+        "label": "Slot",
+        "global": false,
+      },
+      "span": {
+        "label": "Span",
+        "global": false,
+      },
+      "spellcheck": {
+        "label": "Check Spelling",
+        "global": true,
+      },
+      "src": {
+        "label": "Source",
+        "global": false,
+      },
+      "srclang": {
+        "label": "Source Language",
+        "global": false,
+      },
+      "srcset": {
+        "label": "Source Descriptors",
+        "global": false,
+      },
+      "start": {
+        "label": "Start",
+        "global": false,
+      },
+      "step": {
+        "label": "Step",
+        "global": false,
+      },
+      "style": {
+        "label": "Style",
+        "global": true,
+      },
+      "tabindex": {
+        "label": "Tab Index",
+        "global": true,
+      },
+      "target": {
+        "label": "Target Window",
+        "global": false,
+      },
+      "title": {
+        "label": "Title",
+        "global": true,
+      },
+      "translate": {
+        "label": "Translate",
+        "global": true,
+      },
+      "type": {
+        "label": "Type",
+        "global": false,
+      },
+      "usemap": {
+        "label": "Map",
+        "global": false,
+      },
+      "value": {
+        "label": "Value",
+        "global": false,
+      },
+      "width": {
+        "label": "Width",
+        "global": false,
+      },
+      "wrap": {
+        "label": "Wrap Mode",
+        "global": false,
+      }
+    }
+    const meta_element = {
+      "": {
+        "label": "Add Legacy Meta",
+        "comp_attrs": [],
+        "opt_attrs": [
+          "accesskey",
+          "autocapitalize",
+          "autofocus",
+          "contenteditable",
+          "dir",
+          "draggable",
+          "enterkeyhint",
+          "hidden",
+          "inert",
+          "inputmode",
+          "is",
+          "itemid",
+          "itemprop",
+          "itemref",
+          "itemscope",
+          "itemtype",
+          "lang",
+          "nonce",
+          "popover",
+          "spellcheck",
+          "style",
+          "tabindex",
+          "title",
+          "translate",
+          "data-",
+        ],
+      },
+      "base": {
+        "label": "Base",
+        "noscript": false,
+        "singleton": true,
+        "void": true,
+        "comp_attrs": [],
+        "opt_attrs": [
+          "href",
+          "target",
+        ]
+      },
+      "link": {
+        "label": "Link",
+        "noscript": true,
+        "singleton": false,
+        "void": true,
+        "comp_attrs": [],
+        "opt_attrs": [
+          "href",
+          "crossorigin",
+          "rel",
+          "media",
+          "integrity",
+          "hreflang",
+          "type",
+          "referrerpolicy",
+          "sizes",
+          "imagesrcset",
+          "imagesizes",
+          "as",
+          "blocking",
+          "color",
+          "disabled",
+          "fetchpriority",
+        ],
+      },
+      "meta": {
+        "label": "Meta",
+        "noscript": true,
+        "singleton": false,
+        "void": true,
+        "comp_attrs": [],
+        "opt_attrs": [
+          "name",
+          "http-equiv",
+          "content",
+          "charset",
+          "media",
+        ],
+      },
+      "noscript": {
+        "label": "Noscript",
+        "noscript": false,
+        "singleton": false,
+        "void": false,
+        "comp_attrs": [],
+        "opt_attrs": [],
+      },
+      "script": {
+        "label": "Script",
+        "noscript": false,
+        "singleton": false,
+        "void": false,
+        "comp_attrs": [],
+        "opt_attrs": [
+          "src",
+          "type",
+          "nomodule",
+          "async",
+          "defer",
+          "crossorigin",
+          "integrity",
+          "referrerpolicy",
+          "blocking",
+          "fetchpriority",
+        ],
+      },
+      "style": {
+        "label": "Style",
+        "noscript": true,
+        "singleton": false,
+        "void": false,
+        "comp_attrs": [],
+        "opt_attrs": [
+          "media",
+          "blocking",
+        ],
+      },
+      "template": {
+        "label": "Template",
+        "noscript": false,
+        "singleton": false,
+        "void": false,
+        "comp_attrs": [],
+        "opt_attrs": [
+          "shadowrootmode",
+          "shadowrootdelegatesfocus",
+          "shadowrootclonable",
+          "shadowrootserializable",
+        ],
+      },
+      "title": {
+        "label": "Title",
+        "noscript": false,
+        "singleton": true,
+        "void": false,
+        "comp_attrs": [],
+        "opt_attrs": [],
+      }
+
+    }
+
+
+    const ul = document.querySelector("ol")
+
+    for (const key in attrs) {
+      if (Object.hasOwnProperty.call(attrs, key)) {
+        const element = attrs[key];
+
+        const li = document.createElement("li")
+        ul.append(li)
+        li.insertAdjacentHTML("afterbegin", "&#x25B8; ")
+        li.textContent = key
+      }
+    }
+
+    const li = document.querySelectorAll("li")
+    const item_count = li.length
+
+    document.querySelector("p").prepend(item_count)
+
+    li.forEach(node => {
+      const data = meta_element["base"]["opt_attrs"]
+
+      if (data.includes(node.textContent.trim())) {
+        node.style.display = "block"
+      } else {
+        node.style.display = "none"
+      }
+    })
+
+    {
+      const li = document.querySelectorAll("li")
+      const item_count = li.length
+
+      document.querySelector("p").prepend(item_count)
+
+    }
+
+  </script> -->
+</body>
+
+</html>
