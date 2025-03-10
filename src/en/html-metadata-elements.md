@@ -1,5 +1,5 @@
 ---
-layout: page-lay.html
+layout: page.html
 title: "HTML: How 8 elements create 32+2 kinds of metadata"
 canonical: https://www.toheeb.com/en/html-metadata-elements/
 ---
