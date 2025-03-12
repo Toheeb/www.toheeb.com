@@ -1,17 +1,17 @@
 ---
 layout: page.html
-title: "HTML: How 8 elements create 32+2 kinds of metadata"
+title: "HTML: How 8 elements create 31+2 kinds of metadata"
 canonical: https://www.toheeb.com/en/html-metadata-elements/
 ---
 
 
 <section>
 
-# HTML: How 8 elements create 32+2 kinds of metadata
+# HTML: How 8 elements create 31+2 kinds of metadata
 
 The 8 metadata elements in HTML are `base`, `link`, `meta`, `noscript`, `script`, `style`, `template`, and `title`.
 
-`base`, `style`, `template`, and `title` creates one metadata respectively; `link` creates 10 standard metadata and any custom link; `meta` creates 14 standard metadata and any custom meta; `noscript` does not create metadata but modifies some metadata; and `script` creates 4 metadata. In total, that's 32 standard metadata and 2 custom metadata.
+`base`, `style`, `template`, and `title` creates one metadata respectively; `link` creates 10 standard metadata and any custom link; `meta` creates 13 standard metadata and any custom meta; `noscript` does not create metadata but modifies some metadata; and `script` creates 4 metadata. In total, that's 31 standard metadata and 2 custom metadata.
 
 
 <section>
@@ -22,9 +22,11 @@ A `link` element accepts sixteen local attributes. Only `rel` attribute creates 
 
 The `rel` attribute accepts 13 keywords by HTML standard, 1 keyword by SEO standard, and any [custom keyword.](https://microformats.org/wiki/existing-rel-values#HTML5_link_type_extensions) 
 
-`dns-prefetch`, `expect`, `modulepreload`, `preconnect`, `prefetch`, or `preload` keyword creates no metadata but modify other metadata. 
+`dns-prefetch`, `expect`, `preconnect`, or `prefetch` keyword creates no metadata but modify other metadata. 
 
-`icon`, `manifest`, `next`, `pingback`, `search`, `stylesheet`, or `canonical` keyword creates a metadata. 
+`icon`, `manifest`, `next`, `pingback`, `search`, `stylesheet`, or `preload` keyword creates a metadata. 
+
+`modulepreload` is a special alternative to `preload`. 
 
 `alternate` keyword creates 3 metadata depending on the presence of a `stylesheet` keyword; a `type` attribute, and an `hreflang` attribute.
 </section>
@@ -33,15 +35,15 @@ The `rel` attribute accepts 13 keywords by HTML standard, 1 keyword by SEO stand
 
 <section>
 
-## How `meta` element creates 14+1 standard metadata
+## How `meta` element creates 13+1 standard metadata
 
 A `meta` element accepts five local attributes. Only `charset`, `http-equiv`, and `name` creates metadata while others modify them.
 
-`charset` attribute creates 1 metadata, `http-equiv` creates 3 metadata, and `name` attribute creates 10 standard metadata and any custom meta.
+`charset` attribute creates 1 metadata, `http-equiv` creates 3 metadata, and `name` attribute creates 9 standard metadata and any custom meta.
 
 `http-equiv` attribute accepts seven values. `content-security-policy`, `default-style`, and `refresh` value creates a metadata respectively; `content-language` and `set-cookie` are non-conforming; `content-type` value is an alternative for the `charset` attribute; while `x-ua-compatible` is for the now-defaunct Internet Explorer.
 
-`name` attribute accept 8 values by HTML standard, 1 value (`viewport`) by CSS standard, 1 value (`robots`) by SEO standard, and any custom value. Each non-custom value creates a metadata.
+`name` attribute accept 8 values by HTML standard, 1 value (`viewport`) by CSS standard, and any custom value. Each non-custom value creates a metadata.
 </section>
 
 
