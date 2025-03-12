@@ -10,6 +10,9 @@ siteNav: false
 
 - [HTML Attribute Reference](/en/html-attribute-reference)
 
+- [Sponsors](/en/sponsors)
+
+
 <details>
 <summary>Recycle Bin</summary>
 
