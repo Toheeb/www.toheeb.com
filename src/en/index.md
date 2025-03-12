@@ -8,6 +8,8 @@ siteNav: false
 
 - [HTML: How 8 elements create 31+2 kinds of metadata](/en/html-metadata-elements/)
 
+- [HTML Attribute Reference](/en/html-attribute-reference)
+
 <details>
 <summary>Recycle Bin</summary>
 
@@ -17,7 +19,7 @@ siteNav: false
 
 3. [30 HTML Content Metas](/en/html-content-metas/)
 
-4. [132 HTML Content Attributes](/en/html-content-metas/)
+4. [132 HTML Content Attributes](/en/html-content-attributes/)
 
 {% for post in collections.all %}
 
