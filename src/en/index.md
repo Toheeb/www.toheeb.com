@@ -1,6 +1,6 @@
 ---
 layout: page.html
-title: Site Index
+title: On Democratizing the web
 siteNav: false
 ---
 
