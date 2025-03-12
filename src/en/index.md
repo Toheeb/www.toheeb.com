@@ -6,13 +6,15 @@ siteNav: false
 
 # {{title}}
 
+- [Sponsors](/en/sponsors)
+
+- [The Most Powerful Website Builder](/en/powerful-website-builders)
+
 - [HTML: How 8 elements create 31+2 kinds of metadata](/en/html-metadata-elements/)
 
 - [HTML Attribute Reference](/en/html-attribute-reference)
 
-- [The Most Powerful Website Builder](/en/powerful-website-builders)
 
-- [Sponsors](/en/sponsors)
 
 
 <details>
