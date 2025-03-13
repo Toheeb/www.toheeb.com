@@ -25,7 +25,7 @@ headEnd: |
 
 # {{title}}
 
-Web Creator will eventually help you use your site for communication, education, entertainment, and productiviy. No need to visit another site.
+[Web Creator](https://chromewebstore.google.com/detail/web-creator/dhdpccbjfpiaghjacjndbidocacmaina) will eventually help you use your site for communication, education, entertainment, and productivity; No need to visit another site.
 
 Follow the development:
 
@@ -33,7 +33,9 @@ Follow the development:
 
 - [The Most Powerful Website Builder](/en/powerful-website-builders)
 
-- [HTML: How 8 elements create 31+2 kinds of metadata](/en/html-metadata-elements/)
+- Rethinking HTML for Creators
+
+  - [How 8 elements create 31+2 kinds of metadata](/en/html-metadata-elements/)
 
 - [HTML Attribute Reference](/en/html-attribute-reference)
 
