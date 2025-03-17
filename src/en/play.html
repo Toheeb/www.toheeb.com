@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Creator Playground</title>
+  <script src="/en/js/web-creator.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background: #fefefe;
+      color: #333;
+      font: 1rem/1.6 system-ui, sans-serif;
+      padding: 0 2em;
+    }
+
+    h1 {
+      font: bold 2rem/1.2 system-ui, sans-serif;
+      max-width: 12em;
+      margin: 2em auto 0;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      max-width: 20em;
+      margin: 1em auto 5em;
+    }
+
+    p button {
+      display: block;
+      width: fit-content;
+      margin: 2em auto 0;
+      padding: .5em 1em .6em;
+      background-color: #000;
+      color: #fff;
+      border-radius: 2em;
+      border: 2px solid #000;
+      transition: background-color .2s, color .2s;
+    }
+
+    p button:hover {
+      background-color: transparent;
+      color: #000;
+      cursor: pointer;
+    }
+
+    a {
+      color: inherit;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Write HTML without Code, Right Now!</h1>
+
+  <p>
+    Try out Web Creator in a playground to create metadata of a webpage. <button onclick="run_wc('head', true)">Open Playground</button>
+  </p>
+
+  <p><a href="/en">Home</a></p>
+</body>
+
+</html>

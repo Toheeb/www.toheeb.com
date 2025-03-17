@@ -5,7 +5,11 @@ siteNav: false
 headEnd: |
   <style>
   
-    h1 + p a {
+    h1 + p {
+      margin-bottom: 5em;
+    }
+    
+    .cta {
       display: flex;
       gap: .5em;
       align-items: center;
@@ -16,17 +20,17 @@ headEnd: |
       border-radius: 5em;
       line-height: 1;
       text-decoration: none;
-      margin-block: 2em 5em;
+      margin-block: 2em 1em;
       text-align: initial;
       border: 2px solid #000;
       transition: color .1s, background-color .1s;
     }
 
-    h1 + p a svg {
+    .cta svg {
       color: #999;
     }
 
-    h1 + p a:hover {
+    .cta:hover {
       background: transparent;
       color: #333;
     }
@@ -48,7 +52,7 @@ headEnd: |
         margin: 0 auto 4em;
       }
 
-      h1 + p a {
+      .cta {
         margin-inline: auto;
       }
   
@@ -68,10 +72,13 @@ headEnd: |
 
 Web Creator will eventually help you use your site for communication, education, entertainment, and productivity; No need to visit another site. 
 <small>
-  <a href="https://chromewebstore.google.com/detail/web-creator/dhdpccbjfpiaghjacjndbidocacmaina">
+  <a class="cta" href="https://chromewebstore.google.com/detail/web-creator/dhdpccbjfpiaghjacjndbidocacmaina">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
     <span>Download on Chrome Web Store</span>
   </a>
+  <span>
+    or <a href="/en/play">try it in a playground</a>
+  </span>
 </small>
 
 
