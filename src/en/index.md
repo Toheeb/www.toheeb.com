@@ -80,11 +80,13 @@ Web Creator will eventually help you use your site for communication, education,
 
   - [Sponsors](/en/sponsors)
 
-  - [The Most Powerful Website Builder](/en/powerful-website-builders)
-
   - Rethinking HTML for Creators
 
     - [How 8 elements create 31+2 kinds of metadata](/en/html-metadata-elements/)
+
+  - Journal
+
+    - [Marketing Web Creator](/en/marketing)
 
   - [HTML Attribute Reference](/en/html-attribute-reference)
 </details>
