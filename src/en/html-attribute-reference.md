@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Attribute Reference</title>
-
+---
+layout: page.html
+title: HTML Attribute Reference
+canonical: https://www.toheeb.com/en/html-attribute-reference
+siteNav: false
+siteStyle: false
+headEnd: |
   <style>
               
     ::-webkit-scrollbar {
@@ -2220,18 +2219,14 @@
 
     customElements.define("html-attrset", HTMLAttrSet)
   </script>
-</head>
+---
 
-<body>
+# {{title}}
 
-  <h1><span>HTML</span> <span>Attribute Reference</span></h1>
-  <p>Browse and filter all 204 HTML attributes by their scope and elements</p>
+Browse and filter all 204 HTML attributes by their scope and elements
 
-  <html-attrset></html-attrset>
+<html-attrset></html-attrset>
 
-  <p class="menu">
-    <a href="/en">Home</a>
-  </p>
-</body>
-
-</html>
+<p class="menu">
+  <a href="/en">Home</a>
+</p>

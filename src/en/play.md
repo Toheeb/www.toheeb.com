@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Creator Playground</title>
+---
+layout: page.html
+title: Write HTML without Code, Right Now!
+canonical: https://www.toheeb.com/en/play
+siteNav: false
+headEnd: |
   <script src="/en/js/web-creator.js"></script>
   <style>
     body {
-      margin: 0;
-      background: #fefefe;
-      color: #333;
-      font: 1rem/1.6 system-ui, sans-serif;
       padding: 0 2em;
     }
 
@@ -50,16 +45,12 @@
       color: inherit;
     }
   </style>
-</head>
 
-<body>
-  <h1>Write HTML without Code, Right Now!</h1>
+---
 
-  <p>
-    Try out Web Creator in a playground to create metadata of a webpage. <button onclick="run_wc('head', true)">Open Playground</button>
-  </p>
 
-  <p><a href="/en">Home</a></p>
-</body>
+# {{title}}
 
-</html>
+Try out Web Creator in a playground to create metadata of a webpage. <button onclick="run_wc('head', true)">Open Playground</button>
+
+<a href="/en">Home</a>

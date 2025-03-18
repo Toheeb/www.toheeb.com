@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sponsor a Democratic Web</title>
+---
+layout: page.html
+title: Sponsor a Democratic Web
+canonical: https://www.toheeb.com/en/play
+siteNav: false
+headEnd: |
   <style>
-    body {
-      font: 1rem/1.7 sans-serif;
-      margin: 0;
-      padding: 1.5em;
-      color: #333;
-      background-color: #fefefe;
-    }
 
     a {
       color: inherit;
@@ -162,24 +154,13 @@
 
     customElements.define("sponsor-list", SponsorList);
   </script>
-</head>
+---
 
-<body>
-  <div class="primary-window">
-    <main>
-      <section>
-        <h1>Sponsor a Democratic Web</h1>
 
-        <p>
-          On the web, 99% of humans called Creators depend on 1% of humans called Developers. This power imbalance should change. I'm making the <a href="/en/powerful-website-builders">most powerful website builder</a> to help Creators be <a href="/en">free and independent</a>; you can help bring the future faster. <a href="https://ko-fi.com/toheebdotcom" class="cta">Join the Sponsors.</a>
-        </p>
+# {{title}}
 
-        <sponsor-list></sponsor-list>
+On the web, 99% of humans called Creators depend on 1% of humans called Developers. This power imbalance should change. I'm making the most powerful website builder to help Creators be <a href="/en">free and independent</a>; you can help bring the future faster. <a href="https://ko-fi.com/toheebdotcom" class="cta">Join the Sponsors.</a>
 
-        <p><a href="/en">Home</a></p>
-      </section>
-    </main>
-  </div>
-</body>
+<sponsor-list></sponsor-list>
 
-</html>
+<a href="/en">Home</a>
