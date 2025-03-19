@@ -85,7 +85,9 @@ Web Creator will eventually help you use your site for communication, education,
 <details>
   <summary>Notes on Development</summary>
 
-  - [Sponsors](/en/sponsors)
+  - [How to use Framer and Web Creator](/en/and-framer)
+
+  - [How to use Webflow and Web Creator](/en/and-webflow)
 
   - Rethinking HTML for Creators
 
@@ -96,6 +98,8 @@ Web Creator will eventually help you use your site for communication, education,
     - [Marketing Web Creator](/en/marketing)
 
   - [HTML Attribute Reference](/en/html-attribute-reference)
+
+  - [Sponsors](/en/sponsors)
 </details>
 
 
