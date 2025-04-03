@@ -24,7 +24,7 @@ With Web Creator, you can generate all 31 standard metadata and ANY custom metad
 
 The following 4 steps help you use Web Creator to generate metadata code for Webflow:
 
-1. Open the Web Creator Playground ![Webpage of the playground](/en/images/wc-play.png)
+1. Open the [Web Creator Playground](/en/play) ![Webpage of the playground](/en/images/wc-play.png)
 
 2. Click on Add Content and select your choice from the full list. ![Dropdown of Metadata in Web Creator Playground](/en/images/wc-play-contents.png)
 
