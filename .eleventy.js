@@ -5,7 +5,8 @@ module.exports = function (config) {
   config.addPassthroughCopy("src/_redirects");
   config.addPassthroughCopy({ "src/en/_images/": "/en/" });
   config.addPassthroughCopy({ "src/en/_assets/": "/en/" });
-  config.addPassthroughCopy({ "node_modules/@toheeb/prose/index.css": "/en/base.css" });
+  config.addPassthroughCopy({ "node_modules/@toheeb/base/base.css": "/en/css/base.css" });
+  config.addPassthroughCopy({ "node_modules/@toheeb/base/base-settings.js": "/en/js/base-settings.js" });
 
   config.addPlugin(eleventyNavigationPlugin);
 

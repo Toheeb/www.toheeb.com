@@ -85,6 +85,8 @@ Web Creator will eventually help you use your site for communication, education,
 <details>
   <summary>Notes on Development</summary>
 
+  - [Base CSS](/en/base-css/)
+
   - [How to use Framer and Web Creator](/en/and-framer)
 
   - [How to use Webflow and Web Creator](/en/and-webflow)

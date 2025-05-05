@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>{{ title + " | toheeb.com" }}</title>
+    
+    <meta name="description" content="{{ description }}" />
+
+    <link
+      rel="canonical"
+      href="{{ canonical if canonical else site.url + page.url }}"
+    />
+
+    <meta property="og:title" content="{{title}}">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{{site.url + image}}" />
+    <meta property="og:url" content="{{site.url + page.url}}">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="/en/css/base.css">
+    <meta name="color-scheme" content="light dark">
+
+    <script
+      defer
+      src="https://analytics.eu.umami.is/script.js"
+      data-website-id="ee6b55fc-1b3e-49db-a773-19541eb400b5"
+    ></script>
+    <script src="/en/js/base-settings.js"></script>
+
+    {% if pageScript %}
+      {{ pageScript | safe }}
+    {% endif %}
+
+    {% if pageStyle %}
+      {{ pageStyle | safe }}
+    {% endif %}
+
+    {% if headEnd %}
+      {{ headEnd | safe }}
+    {% endif %}
+  </head>
+
+  <body>
+    {{ content | safe }}
+  </body>
+</html>
