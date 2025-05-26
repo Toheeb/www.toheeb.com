@@ -1,0 +1,16 @@
+---
+layout: base.html
+title: HTML Overview
+---
+
+A web document has one root and two branches, like the letter Y.
+
+The root is the html element and the branches are the head element and the body element.
+
+The head element contains metadata while the body element contains windows. Each window contains frames.
+
+A frame contains heading blocks, title blocks, paragraph blocks, and a mix of title and paragraph blocks.
+
+Each block contains media, forms, and breaks; optionally, via a phrase.
+
+This is an overview of HTML, and it starts with a boilerplate.
