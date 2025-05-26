@@ -7,7 +7,7 @@ A web document has one root and two branches, like the letter Y.
 
 The root is the html element and the branches are the head element and the body element.
 
-The head element contains metadata while the body element contains windows. Each window contains frames.
+The head element contains metadata while the body element contains [windows.](/en/html-windows) Each window contains [frames.](/en/html-windows#frames)
 
 A frame contains heading blocks, title blocks, paragraph blocks, and a mix of title and paragraph blocks.
 
