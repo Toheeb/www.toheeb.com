@@ -13,4 +13,4 @@ A frame contains heading blocks, title blocks, paragraph blocks, and a mix of ti
 
 Each block contains media, forms, and breaks; optionally, via a phrase.
 
-This is an overview of HTML, and it starts with a boilerplate.
+This is an overview of HTML, and it starts with a [boilerplate.](/en/html-boilerplate)

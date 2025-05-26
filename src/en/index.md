@@ -90,6 +90,8 @@ Web Creator will eventually help you use your site for communication, education,
     - [Markup](/en/html-intro/)
 
       - [Overview](/en/html-overview/)
+
+      - [Boilerplate](/en/html-boilerplate/)
       
       - [HTML Attribute Reference](/en/html-attribute-reference)
 
