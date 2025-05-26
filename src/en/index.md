@@ -85,9 +85,16 @@ Web Creator will eventually help you use your site for communication, education,
 <details>
   <summary>Notes on Development</summary>
 
-  - [Studio](/en/studio/)
+  - Base Design System
 
-  - [Base CSS](/en/base-css/)
+    - [Markup](/en/html-intro/)
+      
+      - [HTML Attribute Reference](/en/html-attribute-reference)
+
+    - [Reset Stylesheet](/en/base-css/)
+
+
+  - [Studio](/en/studio/)
 
   - [How to use Framer and Web Creator](/en/and-framer)
 
@@ -100,8 +107,6 @@ Web Creator will eventually help you use your site for communication, education,
   - Journal
 
     - [Marketing Web Creator](/en/marketing)
-
-  - [HTML Attribute Reference](/en/html-attribute-reference)
 
   - [Sponsors](/en/sponsors)
 </details>
