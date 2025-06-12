@@ -9,11 +9,9 @@ The root is the html element and the branches are the head element and the body 
 
 <p id="branch">
 
-The head element contains metadata while the body element contains [windows.](/en/html-windows) Each window contains [frames.](/en/html-windows#frames)
+The head element contains metadata while the body element contains [windows.](/en/html-windows) Each window contains [frames.](/en/html-frames)
 </p>
 
-A frame contains heading blocks, title blocks, paragraph blocks, and a mix of title and paragraph blocks.
-
-Each block contains media, forms, and breaks; optionally, via a phrase.
+Frames contain Blocks and Mix of Blocks. Each block contains media, forms, and breaks; optionally, via a phrase.
 
 This is an overview of HTML, and it starts with a [boilerplate.](/en/html-boilerplate)

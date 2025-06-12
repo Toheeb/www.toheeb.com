@@ -95,7 +95,9 @@ Web Creator will eventually help you use your site for communication, education,
 
       - [Metadata](/en/html-metadata)
 
-      - [Windows & Frames](/en/html-windows/)
+      - [Windows](/en/html-windows/)
+
+      - [Frames](/en/html-frames/)
       
       - [HTML Attribute Reference](/en/html-attribute-reference)
 
