@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>{{ title + " | toheeb.com" }}</title>
+    
+    <meta name="description" content="{{ description }}" />
+
+    <link
+      rel="canonical"
+      href="{{ canonical if canonical else site.url + page.url }}"
+    />
+
+    <meta property="og:title" content="{{title}}">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{{site.url + image}}" />
+    <meta property="og:url" content="{{site.url + page.url}}">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="/en/css/base.css">
+    <meta name="color-scheme" content="light dark">
+    <style>
+      .sr-only:not(:focus):not(:active) {
+        clip: rect(0 0 0 0); 
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap; 
+        width: 1px;
+      }
+
+      footer {
+        margin-inline: 1rem;
+      }
+
+      footer p {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+      }
+
+      .base-settings {
+        background-color: transparent;
+        border: none;
+      }
+    </style>
+
+    <script
+      defer
+      src="https://analytics.eu.umami.is/script.js"
+      data-website-id="ee6b55fc-1b3e-49db-a773-19541eb400b5"
+    ></script>
+    <script src="/en/js/base-settings.js"></script>
+
+    {% if pageScript %}
+      {{ pageScript | safe }}
+    {% endif %}
+
+    {% if pageStyle %}
+      {{ pageStyle | safe }}
+    {% endif %}
+
+    {% if headEnd %}
+      {{ headEnd | safe }}
+    {% endif %}
+  </head>
+
+  <body>
+    <div>
+      <main>
+        {{ content | safe }}
+      </main>
+      <footer>
+        <p>
+          <span>
+            <a href="#">{{title}}</a> by 2 at <a href="/">www.toheeb.com</a>
+          </span>
+          <button class="base-settings">
+            <svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 19V18C19 16.9391 18.5259 15.9217 17.682 15.1716C16.8381 14.4214 15.6935 14 14.5 14H5.5C4.30653 14 3.16193 14.4214 2.31802 15.1716C1.47411 15.9217 1 16.9391 1 18V19" stroke-width="1.1"/>
+              <path d="M8.59999 1.52222C8.65236 1.22111 8.92581 1 9.24581 1H10.7545C11.0745 1 11.3479 1.22111 11.4003 1.52222L11.5242 2.23389C11.5609 2.44167 11.7063 2.615 11.8995 2.71722C11.9425 2.73944 11.985 2.76333 12.0275 2.78778C12.2166 2.89667 12.4464 2.93056 12.653 2.85667L13.361 2.60333C13.5061 2.55123 13.6659 2.54999 13.8119 2.59984C13.9578 2.64969 14.0805 2.7474 14.1581 2.87556L14.9122 4.12389C14.9896 4.25206 15.0169 4.4023 14.9892 4.54787C14.9615 4.69344 14.8806 4.82491 14.7609 4.91889L14.1773 5.37833C14.0068 5.51222 13.9225 5.71889 13.9271 5.92944C13.928 5.97666 13.928 6.02389 13.9271 6.07111C13.9225 6.28111 14.0068 6.48778 14.1773 6.62167L14.7615 7.08111C15.0082 7.27556 15.0722 7.61167 14.9127 7.87556L14.1575 9.12389C14.0801 9.25202 13.9575 9.34976 13.8117 9.3997C13.6658 9.44965 13.5061 9.44858 13.361 9.39667L12.653 9.14333C12.4464 9.06945 12.2166 9.10333 12.0269 9.21222C11.9847 9.23673 11.9421 9.26043 11.8989 9.28333C11.7063 9.385 11.5609 9.55833 11.5242 9.76611L11.4003 10.4778C11.3479 10.7794 11.0745 11 10.7545 11H9.24523C8.92523 11 8.65236 10.7789 8.59941 10.4778L8.47548 9.76611C8.43941 9.55833 8.29396 9.385 8.10079 9.28278C8.05765 9.26006 8.01497 9.23653 7.97279 9.21222C7.7837 9.10333 7.55388 9.06945 7.34675 9.14333L6.63868 9.39667C6.49365 9.44862 6.33402 9.44978 6.18817 9.39994C6.04233 9.3501 5.91973 9.25248 5.84217 9.12445L5.08754 7.87611C5.01013 7.74794 4.98284 7.59771 5.01054 7.45213C5.03824 7.30656 5.11913 7.17509 5.23882 7.08111L5.82297 6.62167C5.99286 6.48833 6.07722 6.28111 6.07315 6.07111C6.07224 6.02389 6.07224 5.97666 6.07315 5.92944C6.07722 5.71833 5.99286 5.51222 5.82297 5.37833L5.23882 4.91889C5.11928 4.82494 5.03848 4.69357 5.01079 4.54812C4.98309 4.40267 5.01029 4.25256 5.08754 4.12444L5.84217 2.87611C5.91966 2.74785 6.04232 2.65003 6.1883 2.60008C6.33428 2.55012 6.49409 2.55127 6.63926 2.60333L7.34675 2.85667C7.55388 2.93056 7.7837 2.89667 7.97279 2.78778C8.01468 2.76333 8.05774 2.74 8.10079 2.71667C8.29396 2.615 8.43941 2.44167 8.47548 2.23389L8.59999 1.52222Z"/>
+              <path d="M11.7453 5.99998C11.7453 6.44201 11.5614 6.86593 11.2341 7.17849C10.9067 7.49105 10.4628 7.66665 9.99985 7.66665C9.53693 7.66665 9.09297 7.49105 8.76563 7.17849C8.43829 6.86593 8.25439 6.44201 8.25439 5.99998C8.25439 5.55795 8.43829 5.13403 8.76563 4.82147C9.09297 4.50891 9.53693 4.33331 9.99985 4.33331C10.4628 4.33331 10.9067 4.50891 11.2341 4.82147C11.5614 5.13403 11.7453 5.55795 11.7453 5.99998Z"/>
+            </svg>
+            <span class="sr-only">
+              personalization settings
+            </span>
+          </button>
+        </p>
+      </footer>
+    </div>
+    <base-settings></base-settings>
+  </body>
+</html>
