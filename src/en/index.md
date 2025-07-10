@@ -87,19 +87,9 @@ Web Creator will eventually help you use your site for communication, education,
 
   - Base Design System
 
-    - [Markup](/en/html-intro/)
+    - [HTML Components](/en/html-components/)
 
-      - [Overview](/en/html-overview/)
-
-      - [Boilerplate](/en/html-boilerplate/)
-
-      - [Metadata](/en/html-metadata)
-
-      - [Windows](/en/html-windows/)
-
-      - [Frames](/en/html-frames/)
-      
-      - [HTML Attribute Reference](/en/html-attribute-reference)
+    - [HTML Attributes](/en/html-attribute-reference)
 
     - CSS
 
