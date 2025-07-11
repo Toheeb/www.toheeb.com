@@ -1,292 +1,30 @@
 ---
-layout: page.html
-title: The 132 Content Attributes of HTML
-canonical: https://www.toheeb.com/en/html-content-attributes/
+layout: base.html
+title: HTML Attributes
+headEnd: |
+  <link rel="stylesheet" href="/en/css/html-attributes.css">
+  <script src="/en/js/html-attributes.js">
 ---
 
 
-<header>
-
-  # The 132 Content Attributes of HTML
-
-  In HTML, an attribute modifies its element. The element's start tag specifies the set of space-separated attributes that modify the element's content. Each attribute always has a name part and most times a value part.
-
-  <nav class="list-to-grid">
-  <h2>Outline</h2>
-
-  The 132 Content Attributes are as follows:
-
-  - [`abbr`](#attribute-abbr)
-
-  - [`accept`](#attribute-accept)
-
-  - [`accept-charset`](#attribute-accept-charset)
-
-  - [`accesskey`](#attribute-accesskey)
-
-  - [`action`](#attribute-action)
-
-  - [`allow`](#attribute-allow)
-
-  - [`allowfullscreen`](#attribute-allowfullscreen)
-
-  - [`alt`](#attribute-alt)
-
-  - [`as`](#attribute-as)
-
-  - [`async`](#attribute-async)
-
-  - [`autocapitalize`](#attribute-autocapitalize)
-
-  - [`autocomplete`](#attribute-autocomplete)
-
-  - [`autofocus`](#attribute-autofocus)
-
-  - [`autoplay`](#attribute-autoplay)
-
-  - [`blocking`](#attribute-blocking)
-
-  - [`charset`](#attribute-charset)
-
-  - [`checked`](#attribute-checked)
-
-  - [`cite`](#attribute-cite)
-
-  - [`class`](#attribute-class)
-
-  - [`color`](#attribute-color)
-
-  - [`cols`](#attribute-cols)
-
-  - [`colspan`](#attribute-colspan)
-
-  - [`content`](#attribute-content)
-
-  - [`controls`](#attribute-controls)
-
-  - [`coords`](#attribute-coords)
-
-  - [`contenteditable`](#attribute-contenteditable)
-  
-  - [`crossorigin`](#attribute-crossorigin)
-
-  - [`data-*`](#attribute-data-*)
-
-  - [`data`](#attribute-data)
-  
-  - [`datetime`](#attribute-datetime)
-
-  - [`decoding`](#attribute-decoding)
-  
-  - [`default`](#attribute-default)
-
-  - [`defer`](#attribute-defer)
-
-  - [`dir`](#attribute-dir)
-
-  - [`dirname`](#attribute-dirname)
-
-  - [`disabled`](#attribute-disabled)
-
-  - [`download`](#attribute-download)
-
-  - [`draggable`](#attribute-draggable)
-
-  - [`enctype`](#attribute-enctype)
-
-  - [`enterhintkey`](#attribute-enterhintkey)
-
-  - [`fetchpriority`](#attribute-fetchpriority)
-
-  - [`for`](#attribute-for)
-
-  - [`form`](#attribute-form)
-
-  - [`formaction`](#attribute-formaction)
-
-  - [`formenctype`](#attribute-formenctype)
-
-  - [`formmethod`](#attribute-formmethod)
-
-  - [`formnovalidate`](#attribute-formnovalidate)
-
-  - [`formtarget`](#attribute-formtarget)
-
-  - [`headers`](#attribute-headers)
-
-  - [`height`](#attribute-height)
-
-  - [`hidden`](#attribute-hidden)
-
-  - [`high`](#attribute-high)
-
-  - [`href`](#attribute-href)
-
-  - [`hreflang`](#attribute-hreflang)
-
-  - [`http-equiv`](#attribute-http-equiv)
-
-  - [`id`](#attribute-id)
-
-  - [`imagesizes`](#attribute-imagesizes)
-
-  - [`imagesrcset`](#attribute-imagesrcset)
-
-  - [`inert`](#attribute-inert)
-
-  - [`inputmode`](#attribute-inputmode)
-
-  - [`integrity`](#attribute-integrity)
-
-  - [`is`](#attribute-is)
-
-  - [`ismap`](#attribute-ismap)
-
-  - [`itemid`](#attribute-itemid)
-
-  - [`itemprop`](#attribute-itemprop)
-
-  - [`itemref`](#attribute-itemref)
-
-  - [`itemscope`](#attribute-itemscope)
-
-  - [`itemtype`](#attribute-itemtype)
-
-  - [`kind`](#attribute-kind)
-
-  - [`label`](#attribute-label)
-
-  - [`lang`](#attribute-lang)
-
-  - [`list`](#attribute-list)
-
-  - [`loading`](#attribute-loading)
-
-  - [`loop`](#attribute-loop)
-
-  - [`low`](#attribute-low)
-
-  - [`max`](#attribute-max)
-
-  - [`maxlength`](#attribute-maxlength)
-
-  - [`media`](#attribute-media)
-
-  - [`method`](#attribute-method)
-
-  - [`min`](#attribute-min)
-
-  - [`minlength`](#attribute-minlength)
-
-  - [`muted`](#attribute-muted)
-
-  - [`multiple`](#attribute-multiple)
-
-  - [`name`](#attribute-name)
-
-  - [`nomodule`](#attribute-nomodule)
-
-  - [`nonce`](#attribute-nonce)
-
-  - [`novalidate`](#attribute-novalidate)
-
-  - [`open`](#attribute-open)
-
-  - [`optimum`](#attribute-optimum)
-
-  - [`pattern`](#attribute-pattern)
-
-  - [`ping`](#attribute-ping)
-
-  - [`placeholder`](#attribute-placeholder)
-
-  - [`playsinline`](#attribute-playsinline)
-
-  - [`popover`](#attribute-popover)
-
-  - [`popovertarget`](#attribute-popovertarget)
-
-  - [`popovertargetaction`](#attribute-popovertargetaction)
-
-  - [`poster`](#attribute-poster)
-
-  - [`preload`](#attribute-preload)
-  
-  - [`readonly`](#attribute-readonly)
-  
-  - [`referrerpolicy`](#attribute-referrerpolicy)
-
-  - [`rel`](#attribute-rel)
-
-  - [`required`](#attribute-required)
-
-  - [`reversed`](#attribute-reversed)
-
-  - [`rows`](#attribute-rows)
-
-  - [`rowspan`](#attribute-rowspan)
-
-  - [`sandbox`](#attribute-sandbox)
-
-  - [`scope`](#attribute-scope)
-
-  - [`selected`](#attribute-selected)
-
-  - [`shadowrootdelegatefocus`](#attribute-shadowrootdelegatefocus)
-
-  - [`shadowrootmode`](#attribute-shadowrootmode)
-  
-  - [`shape`](#attribute-shape)
-
-  - [`size`](#attribute-size)
-
-  - [`sizes`](#attribute-sizes)
-
-  - [`slot`](#attribute-slot)
-
-  - [`span`](#attribute-span)
-
-  - [`spellcheck`](#attribute-spellcheck)
-  
-  - [`src`](#attribute-src)
-
-  - [`srcdoc`](#attribute-srcdoc)
-
-  - [`srclang`](#attribute-srclang)
-
-  - [`srcset`](#attribute-srcset)
-
-  - [`start`](#attribute-start)
-
-  - [`step`](#attribute-step)
-
-  - [`style`](#attribute-style)
-
-  - [`tabindex`](#attribute-tabindex)
-
-  - [`target`](#attribute-target)
-
-  - [`title`](#attribute-title)
-
-  - [`translate`](#attribute-translate)
-
-  - [`type`](#attribute-type)
-
-  - [`usemap`](#attribute-usemap)
-
-  - [`value`](#attribute-value)
-
-  - [`width`](#attribute-width)
-
-  - [`wrap`](#attribute-wrap)
-
-  </nav>
-
-</header>
+A set of space-separated HTML attributes modify its element in the start tag. Each attributes always has a name part and, most times, a value part.
 
 
 <section>
-  <h2 id="attribute-class"><code>class</code> attribute</h2>
+<hgroup>
+<h2>Index</h2>
+</hgroup>
+
+Browse and filter all 204 HTML attributes by their scope and elements
+
+<div><html-attrset></html-attrset></div>
+</section>
+
+
+<section>
+  <hgroup>
+    <h2 id="class"><code>class</code> attribute</h2>
+  </hgroup>
 
   The `class` attribute relates an identifier to an HTML element
 
@@ -299,7 +37,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-id"><code>id</code> attribute</h2>
+  <hgroup>
+    <h2 id="id"><code>id</code> attribute</h2>
+  </hgroup>
 
   The `id` attribute relates a unique identifier on an HTML element
 
@@ -315,7 +55,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-lang"><code>lang</code> attribute</h2>
+  <hgroup>
+    <h2 id="lang"><code>lang</code> attribute</h2>
+  </hgroup>
 
   The `lang` attribute relates the primary content language on an HTML element. It's recommended to specify a `lang` atribute on the [Content Root](/en/html-content-root/)
 
@@ -330,7 +72,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="charset-attribute"><code>charset</code> attribute</h2>
+  <hgroup>
+    <h2 id="charset-attribute"><code>charset</code> attribute</h2>
+  </hgroup>
 
   The `charset` attribute relates the document character encoding on a [`meta` element](/en/html-content-metas/#element-meta)
 
@@ -344,7 +88,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-dir"><code>dir</code> attribute</h2>
+  <hgroup>
+    <h2 id="dir"><code>dir</code> attribute</h2>
+  </hgroup>
 
   The `dir` attribute relates the content direction on an HTML element
 
@@ -382,7 +128,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-translate"><code>translate</code> attribute</h2>
+  <hgroup>
+    <h2 id="translate"><code>translate</code> attribute</h2>
+  </hgroup>
 
   The `translate` attribute relates the content translatable status on an HTML element
 
@@ -414,7 +162,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-title"><code>title</code> attribute</h2>
+  <hgroup>
+    <h2 id="title"><code>title</code> attribute</h2>
+  </hgroup>
 
   The `title` attribute relates the following:
 
@@ -475,7 +225,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-rel"><code>rel</code> attribute</h2>
+  <hgroup>
+    <h2 id="rel"><code>rel</code> attribute</h2>
+  </hgroup>
 
   The `rel` attribute relates a [resource connection type](https://html.spec.whatwg.org/#linkTypes) on the following elements: 
   [`link`,](/en/html-content-metas/#element-link) 
@@ -547,7 +299,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-type"><code>type</code> attribute</h2>
+  <hgroup>
+    <h2 id="type"><code>type</code> attribute</h2>
+  </hgroup>
 
   The `type` attribute relates the following:
 
@@ -667,7 +421,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-hreflang"><code>hreflang</code> attribute</h2>
+  <hgroup>
+    <h2 id="hreflang"><code>hreflang</code> attribute</h2>
+  </hgroup>
 
   The `hreflang` attribute relates the language of a resource on the following elements: [`link`,](/en/html-content-metas/#element-link) and [`a`.](/en/html-content-connotations/#element-a)
 
@@ -681,7 +437,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-as"><code>as</code> attribute</h2>
+  <hgroup>
+    <h2 id="as"><code>as</code> attribute</h2>
+  </hgroup>
 
   The `as` attribute relates a preloaded resource on a [`link` element.](/en/html-content-metas/#element-link)
 
@@ -697,7 +455,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-blocking"><code>blocking</code> attribute</h2>
+  <hgroup>
+    <h2 id="blocking"><code>blocking</code> attribute</h2>
+  </hgroup>
 
   The `blocking` relates a blocked operation while fetching a resource on the following elements:
   <a href="/en/html-content-metas/#element-link"><code>link</code>,</a>
@@ -714,7 +474,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-nonce"><code>nonce</code> attribute</h2>
+  <hgroup>
+    <h2 id="nonce"><code>nonce</code> attribute</h2>
+  </hgroup>
 
   The `nonce` attribute relates a one-time number to allow a fetch operation on an HTML element
 
@@ -728,7 +490,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-fetchpriority"><code>fetchpriority</code> attribute</h2>
+  <hgroup>
+    <h2 id="fetchpriority"><code>fetchpriority</code> attribute</h2>
+  </hgroup>
 
   The `fetchpriority` attribute relates a fetch priority hint for the resource on the following elements:
   <a href="/en/html-content-metas/#element-link"><code>link</code>,</a> 
@@ -768,7 +532,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-crossorigin"><code>crossorigin</code> attribute</h2>
+  <hgroup>
+    <h2 id="crossorigin"><code>crossorigin</code> attribute</h2>
+  </hgroup>
 
   The `crossorigin` attribute relates the status of cross-origin sharings on the following elements:
   [`script`,](/en/html-content-metas/#element-script) 
@@ -804,7 +570,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-referrerpolicy"><code>referrerpolicy</code> attribute</h2>
+  <hgroup>
+    <h2 id="referrerpolicy"><code>referrerpolicy</code> attribute</h2>
+  </hgroup>
 
   The `referrerpolicy` relates a referrer for the following:
 
@@ -918,7 +686,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-integrity"><code>integrity</code> attribute</h2>
+  <hgroup>
+    <h2 id="integrity"><code>integrity</code> attribute</h2>
+  </hgroup>
 
   The `integrity` attribute relates a manipulation check on the following elements: [`link`,](/en/html-content-metas/#element-link) and [`script`.](/en/html-content-metas/#element-script)
 
@@ -932,7 +702,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-async"><code>async</code> attribute</h2>
+  <hgroup>
+    <h2 id="async"><code>async</code> attribute</h2>
+  </hgroup>
 
   The `async` boolean attribute relates an execution of a script when it's available on a [`script` element](/en/html-content-metas/#element-script)
 
@@ -944,7 +716,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-defer"><code>defer</code> attribute</h2>
+  <hgroup>
+    <h2 id="defer"><code>defer</code> attribute</h2>
+  </hgroup>
 
   The `defer` boolean attribute relates an execution of a script when the DOM is ready on a [`script` element](/en/html-content-metas/#element-script)
 
@@ -956,7 +730,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-nomodule"><code>nomodule</code> attribute</h2>
+  <hgroup>
+    <h2 id="nomodule"><code>nomodule</code> attribute</h2>
+  </hgroup>
 
   The `nomodule` boolean attribute relates a module fallback on a [`script` element](/en/html-content-metas/#element-script)
 
@@ -968,7 +744,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-media"><code>media</code> attribute</h2>
+  <hgroup>
+    <h2 id="media"><code>media</code> attribute</h2>
+  </hgroup>
 
   The `media` attribute relates a device restriction on the following elements:
   [`link`,](/en/html-content-metas/#element-link) 
@@ -986,7 +764,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-color"><code>color</code> attribute</h2>
+  <hgroup>
+    <h2 id="color"><code>color</code> attribute</h2>
+  </hgroup>
 
   The `color` attribute relates an icon color for launchers on a [`link` element.](/en/html-content-metas/#element-link)
 
@@ -1000,7 +780,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-http-equiv"><code>http-equiv</code> attribute</h2>
+  <hgroup>
+    <h2 id="http-equiv"><code>http-equiv</code> attribute</h2>
+  </hgroup>
 
   The `http-equiv` attribute relates a [pragma directive key on a `meta` element](/en/html-content-metas/#element-meta)
 
@@ -1018,7 +800,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-content"><code>content</code> attribute</h2>
+  <hgroup>
+    <h2 id="content"><code>content</code> attribute</h2>
+  </hgroup>
 
   The `content` attribute relates the value of a [document metadata key](#attribute-name-element-meta) or [pragma directive key](#attribute-http-equiv) on a [`meta` element](/en/html-content-metas/#element-meta) 
 
@@ -1093,7 +877,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-shadowrootmode"><code>shadow<wbr>root<wbr>mode</code> attribute</h2>
+  <hgroup>
+    <h2 id="shadowrootmode"><code>shadow<wbr>root<wbr>mode</code> attribute</h2>
+  </hgroup>
 
   The `shadowrootmode` attribute relates access to declarative shadow root on a [`template` element](/en/html-content-metas/#element-template)
 
@@ -1122,7 +908,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-shadowrootdelegatesfocus"><code>shadow<wbr>root<wbr>delegates<wbr>focus</code> attribute</h2>
+  <hgroup>
+    <h2 id="shadowrootdelegatesfocus"><code>shadow<wbr>root<wbr>delegates<wbr>focus</code> attribute</h2>
+  </hgroup>
 
   The `shadowrootdelegatesfocus` boolean attribute relates a focus delegation to a [declarative shadow root](#attribute-shadowrootmode) on a [`template` element.](/en/html-content-metas/#element-template)
 
@@ -1134,7 +922,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-is"><code>is</code> attribute</h2>
+  <hgroup>
+    <h2 id="is"><code>is</code> attribute</h2>
+  </hgroup>
 
   The `is` attribute relates an [extended custom element](https://html.spec.whatwg.org/#customized-built-in-element) on a standard HTML element
 
@@ -1149,7 +939,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-slot"><code>slot</code> attribute</h2>
+  <hgroup>
+    <h2 id="slot"><code>slot</code> attribute</h2>
+  </hgroup>
 
   The `slot` attribute relates a [`slot` element](/en/html-content-metas/#element-slot) on an HTML element
 
@@ -1163,7 +955,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-style"><code>style</code> attribute</h2>
+  <hgroup>
+    <h2 id="style"><code>style</code> attribute</h2>
+  </hgroup>
 
   The `style` attribute relates CSS declarations on an HTML element
 
@@ -1177,7 +971,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-data-*"><code>data-*</code> attribute</h2>
+  <hgroup>
+    <h2 id="data-*"><code>data-*</code> attribute</h2>
+  </hgroup>
 
   The `data-*` attribute relates a simple data store on an HTML element
 
@@ -1191,7 +987,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-usemap"><code>usemap</code> attribute</h2>
+  <hgroup>
+    <h2 id="usemap"><code>usemap</code> attribute</h2>
+  </hgroup>
 
   The `usemap` attribute relates a [`map` element](/en/html-content-objects/#element-map) on an [`img` element](/en/html-content-objects/#element-img)
 
@@ -1205,7 +1003,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-ismap"><code>ismap</code> attribute</h2>
+  <hgroup>
+    <h2 id="ismap"><code>ismap</code> attribute</h2>
+  </hgroup>
 
   The `ismap` boolean attribute relates access to a server-side image map on an [`img` element](/en/html-content-objects/#element-img)
 
@@ -1217,7 +1017,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-srcset"><code>srcset</code> attribute</h2>
+  <hgroup>
+    <h2 id="srcset"><code>srcset</code> attribute</h2>
+  </hgroup>
 
   The `srcset` attribute relates an address of a responsive image resource on the following elements: [`source`,](/en/html-content-objects/#element-source) and [`img`.](/en/html-content-objects/#element-img)
 
@@ -1237,7 +1039,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-imagesrcset"><code>imagesrcset</code> attribute</h2>
+  <hgroup>
+    <h2 id="imagesrcset"><code>imagesrcset</code> attribute</h2>
+  </hgroup>
 
   The `imagesrcset` attribute is a synonym of the [`srcset` attribute](#attribute-srcset) but on a [`link` element](/en/html-content-metas/#element-link)
 
@@ -1249,7 +1053,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-src"><code>src</code> attribute</h2>
+  <hgroup>
+    <h2 id="src"><code>src</code> attribute</h2>
+  </hgroup>
 
   The `src` attribute relates an address of the resource on the following elements:
   <a href="/en/html-content-forms/#element-input"><code>input</code>,</a> 
@@ -1272,7 +1078,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-data"><code>data</code> attribute</h2>
+  <hgroup>
+    <h2 id="data"><code>data</code> attribute</h2>
+  </hgroup>
 
   The `data` attribute relates the address of a generic object resource on an [`object` element](/en/html-content-objects/#element-object)
 
@@ -1286,7 +1094,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-loading"><code>loading</code> attribute</h2>
+  <hgroup>
+    <h2 id="loading"><code>loading</code> attribute</h2>
+  </hgroup>
 
   The `loading` attribute relates a loading mechanism on the following elements when out of the viewport: [`img`,](/en/html-content-objects/#element-img) and [`iframe`.](/en/html-content-objects/#element-iframe)
 
@@ -1314,7 +1124,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-decoding"><code>decoding</code> attribute</h2>
+  <hgroup>
+    <h2 id="decoding"><code>decoding</code> attribute</h2>
+  </hgroup>
 
   The `decoding` attribute relates an image decoding hint on an [`img` element](/en/html-content-objects/#element-img)
 
@@ -1351,7 +1163,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-shape"><code>shape</code> attribute</h2>
+  <hgroup>
+    <h2 id="shape"><code>shape</code> attribute</h2>
+  </hgroup>
 
   The `shape` attribute relates a shape model on an [`area` element](/en/html-content-objects/#element-area)
 
@@ -1394,7 +1208,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-width"><code>width</code> attribute</h2>
+  <hgroup>
+    <h2 id="width"><code>width</code> attribute</h2>
+  </hgroup>
 
   The `width` attribute relates the following:
 
@@ -1420,7 +1236,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-imagesizes"><code>imagesizes</code> attribute</h2>
+  <hgroup>
+    <h2 id="imagesizes"><code>imagesizes</code> attribute</h2>
+  </hgroup>
 
   The `imagesizes` attribute relates the wideness of a responsive image resource on a [`link` element](/en/html-content-metas/#element-link)
 
@@ -1434,7 +1252,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-sizes"><code>sizes</code> attribute</h2>
+  <hgroup>
+    <h2 id="sizes"><code>sizes</code> attribute</h2>
+  </hgroup>
 
   The `sizes` attribute relates the following:
 
@@ -1462,7 +1282,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-height"><code>height</code> attribute</h2>
+  <hgroup>
+    <h2 id="height"><code>height</code> attribute</h2>
+  </hgroup>
 
   The `height` attribute relates the following:
 
@@ -1488,7 +1310,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-coords"><code>coords</code> attribute</h2>
+  <hgroup>
+    <h2 id="coords"><code>coords</code> attribute</h2>
+  </hgroup>
 
   The `coords` attribute relates a freeform wideness and highness on an [`area` element](/en/html-content-objects/#element-area)
 
@@ -1502,7 +1326,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-alt"><code>alt</code> attribute</h2>
+  <hgroup>
+    <h2 id="alt"><code>alt</code> attribute</h2>
+  </hgroup>
 
   The `alt` attribute relates an alternative text of an image resource on the following elements:
   <a href="/en/html-content-objects/#element-img"><code>img</code>,</a> 
@@ -1520,7 +1346,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-poster"><code>poster</code> attribute</h2>
+  <hgroup>
+    <h2 id="poster"><code>poster</code> attribute</h2>
+  </hgroup>
 
   The `poster` attribute relates an address of a poster image resource on a [`video` element](/en/html-content-objects/#element-video)
 
@@ -1535,7 +1363,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-preload"><code>preload</code> attribute</h2>
+  <hgroup>
+    <h2 id="preload"><code>preload</code> attribute</h2>
+  </hgroup>
 
   The `preload` attribute relates the fetching mechanism on the following elements: [`audio`,](/en/html-content-objects/#element-audio) and [`video`.](/en/html-content-objects/#element-video)
 
@@ -1572,7 +1402,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-autoplay"><code>autoplay</code> attribute</h2>
+  <hgroup>
+    <h2 id="autoplay"><code>autoplay</code> attribute</h2>
+  </hgroup>
 
   The `autoplay` boolean attribute relates an automatic play functionality on the following elements: [`audio`,](/en/html-content-objects/#element-audio) and [`video`.](/en/html-content-objects/#element-video)
 
@@ -1585,7 +1417,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-loop"><code>loop</code> attribute</h2>
+  <hgroup>
+    <h2 id="loop"><code>loop</code> attribute</h2>
+  </hgroup>
 
   The `loop` boolean attribute relates an automatic repeat functionality on the following elements: [`audio`,](/en/html-content-objects/#element-audio) and [`video`.](/en/html-content-objects/#element-video)
 
@@ -1597,7 +1431,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-muted"><code>muted</code> attribute</h2>
+  <hgroup>
+    <h2 id="muted"><code>muted</code> attribute</h2>
+  </hgroup>
 
   The `muted` boolean attribute relates a no-sound functionality on the following elements: [`audio`,](/en/html-content-objects/#element-audio) and [`video`.](/en/html-content-objects/#element-video)
 
@@ -1609,7 +1445,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-playsinline"><code>playsinline</code> attribute</h2>
+  <hgroup>
+    <h2 id="playsinline"><code>playsinline</code> attribute</h2>
+  </hgroup>
 
   The `playsinline` boolean attribute relates an inline play functionality on a [`video` element](/en/html-content-objects/#element-video)  
 
@@ -1621,7 +1459,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-srclang"><code>srclang</code> attribute</h2>
+  <hgroup>
+    <h2 id="srclang"><code>srclang</code> attribute</h2>
+  </hgroup>
 
   The `srclang` attribute relates the primary language of a timed text resource on a [`track` element](/en/html-content-objects/#element-track)
 
@@ -1635,7 +1475,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-default"><code>default</code> attribute</h2>
+  <hgroup>
+    <h2 id="default"><code>default</code> attribute</h2>
+  </hgroup>
 
   The `default` boolean attribute relates an initial preference pending user's choice on a [`track` element](/en/html-content-objects/#element-track)
 
@@ -1647,7 +1489,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-controls"><code>controls</code> attribute</h2>
+  <hgroup>
+    <h2 id="controls"><code>controls</code> attribute</h2>
+  </hgroup>
 
   The `controls` boolean attribute relates a preference for the user agent's control buttons on the following elements: [`audio`,](/en/html-content-objects/#element-audio) and [`video`.](/en/html-content-objects/#element-video)
 
@@ -1659,7 +1503,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-kind"><code>kind</code> attribute</h2>
+  <hgroup>
+    <h2 id="kind"><code>kind</code> attribute</h2>
+  </hgroup>
 
   The `kind` attribute relates a sort of text track resource on a [`track` element](/en/html-content-objects/#element-track)
 
@@ -1698,7 +1544,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-label"><code>label</code> attribute</h2>
+  <hgroup>
+    <h2 id="label"><code>label</code> attribute</h2>
+  </hgroup>
 
   The `label` attribute relates a user-readable title on the following elements:
   <a href="/en/html-content-forms/#element-option"><code>option</code>,</a> 
@@ -1715,7 +1563,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-srcdoc"> <code>srcdoc</code> attribute</h2>
+  <hgroup>
+    <h2 id="srcdoc"> <code>srcdoc</code> attribute</h2>
+  </hgroup>
 
   The `srcdoc` attribute relates an html document on an [`iframe` element](/en/html-content-objects/#element-iframe)
 
@@ -1733,7 +1583,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-sandbox"> <code>sandbox</code> attribute </h2>
+  <hgroup>
+    <h2 id="sandbox"> <code>sandbox</code> attribute </h2>
+  </hgroup>
 
   The `sandbox` attribute relates some security rules on an [`iframe` element](/en/html-content-objects/#element-iframe)
 
@@ -1748,7 +1600,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-allowfullscreen"> <code>allowfullscreen</code> attribute</h2>
+  <hgroup>
+    <h2 id="allowfullscreen"> <code>allowfullscreen</code> attribute</h2>
+  </hgroup>
 
   The `allowfullscreen` boolean relates a fullscreen permission on an [`iframe` element](/en/html-content-objects/#element-iframe)
 
@@ -1760,7 +1614,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-allow"> <code>allow</code> attribute </h2>
+  <hgroup>
+    <h2 id="allow"> <code>allow</code> attribute </h2>
+  </hgroup>
 
   The `allow` attribute relates a permission policy on an [`iframe` element](/en/html-content-objects/#element-iframe)
 
@@ -1774,7 +1630,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-draggable"><code>draggable</code> attribute</h2>
+  <hgroup>
+    <h2 id="draggable"><code>draggable</code> attribute</h2>
+  </hgroup>
 
   The `draggable` attribute relates a drag functionality on an HTML element
 
@@ -1805,7 +1663,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-contenteditable"><code>contenteditable</code> attribute</h2>
+  <hgroup>
+    <h2 id="contenteditable"><code>contenteditable</code> attribute</h2>
+  </hgroup>
 
   The `contenteditable` attribute relates an edit functionality on an HTML element
 
@@ -1841,7 +1701,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-  <h2 id="attribute-for"><code>for</code> attribute</h2>
+  <hgroup>
+    <h2 id="for"><code>for</code> attribute</h2>
+  </hgroup>
 
   The `for` attribute relates the following:
 
@@ -1865,7 +1727,9 @@ canonical: https://www.toheeb.com/en/html-content-attributes/
 
 
 <section>
-<h2 id="attribute-name"> <code>name</code> attribute </h2>
+<hgroup>
+    <h2 id="name"> <code>name</code> attribute </h2>
+  </hgroup>
 
 The `name` attribute relates the following:
 
@@ -1929,7 +1793,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-dirname"><code>dirname</code> attribute</h2>
+  <hgroup>
+    <h2 id="dirname"><code>dirname</code> attribute</h2>
+  </hgroup>
 
   The `dirname` attribute relates a form-unique direction identifier on the following elements:
   <a href="/en/html-content-forms/#element-textarea"><code>textarea</code>,</a> and 
@@ -1945,7 +1811,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-form"><code>form</code> attribute</h2>
+  <hgroup>
+    <h2 id="form"><code>form</code> attribute</h2>
+  </hgroup>
 
   The `form` attribute relates a [`form` element](/en/html-content-forms/) on the following elements:
   <a href="/en/html-content-forms/#element-textarea"><code>textarea</code>,</a> 
@@ -1967,7 +1835,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-accept-charset"><code>accept-charset</code> attribute</h2>
+  <hgroup>
+    <h2 id="accept-charset"><code>accept-charset</code> attribute</h2>
+  </hgroup>
 
   The `accept-charset` attribute relates the character encodings for the submission of [Content Forms](/en/html-content-forms/) on a [`form` element](/en/html-content-forms/#element-form)
 
@@ -1981,7 +1851,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-action"><code>action</code> attribute</h2>
+  <hgroup>
+    <h2 id="action"><code>action</code> attribute</h2>
+  </hgroup>
 
   The `action` attribute relates a handler for the submission of [Content Forms](/en/html-content-forms/) on a [`form` element](/en/html-content-forms/#element-form)
 
@@ -1995,7 +1867,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-formaction"><code>formaction</code> attribute</h2>
+  <hgroup>
+    <h2 id="formaction"><code>formaction</code> attribute</h2>
+  </hgroup>
 
   The `formaction` attribute relates an higher precedence [`action` attribute](#attribute-enctype) but on the following elements: [`button`,](/en/html-content-forms/#element-button) and [`input`.](/en/html-content-forms/#element-input)
 
@@ -2007,7 +1881,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-enctype"><code>enctype</code> attribute</h2>
+  <hgroup>
+    <h2 id="enctype"><code>enctype</code> attribute</h2>
+  </hgroup>
 
   The `enctype` attribute relates an encoding for submission of [Content Forms](/en/html-content-forms/) on a [`form` element](/en/html-content-forms/#element-form)
 
@@ -2023,7 +1899,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-formenctype"><code>formenctype</code> attribute</h2>
+  <hgroup>
+    <h2 id="formenctype"><code>formenctype</code> attribute</h2>
+  </hgroup>
 
   The `formenctype` attribute relates an higher precedence [`enctype` attribute](#attribute-enctype) but on the following elements: [`button`,](/en/html-content-forms/#element-button) and [`input`.](/en/html-content-forms/#element-input)
 
@@ -2035,7 +1913,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-method"><code>method</code> attribute</h2>
+  <hgroup>
+    <h2 id="method"><code>method</code> attribute</h2>
+  </hgroup>
 
   The `method` attribute relates a transfer mechanism for the submission of [Content Forms](/en/html-content-forms/) on a [`form` element](/en/html-content-forms/#element-form)
 
@@ -2070,7 +1950,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-formmethod"><code>formmethod</code> attribute</h2>
+  <hgroup>
+    <h2 id="formmethod"><code>formmethod</code> attribute</h2>
+  </hgroup>
 
   The `formmethod` attribute relates an higher precedence [`method` attribute](#attribute-method) but on the following elements: [`button`,](/en/html-content-forms/#element-button) and [`input`.](/en/html-content-forms/#element-input)
 
@@ -2082,7 +1964,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-novalidate"><code>novalidate</code> attribute</h2>
+  <hgroup>
+    <h2 id="novalidate"><code>novalidate</code> attribute</h2>
+  </hgroup>
 
   The `novalidate` boolean attribute relates a no-validation rule for the submission of [Content Forms](/en/html-content-forms/) on a [`form` element](/en/html-content-forms/#element-form)
 
@@ -2094,7 +1978,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-formnovalidate"><code>formnovalidate</code> attribute</h2>
+  <hgroup>
+    <h2 id="formnovalidate"><code>formnovalidate</code> attribute</h2>
+  </hgroup>
 
   The `formnovalidate` attribute relates an higher precedence [`novalidate` attribute](#attribute-novalidate) but on the following elements: [`button`,](/en/html-content-forms/#element-button) and [`input`.](/en/html-content-forms/#element-input)
 
@@ -2107,7 +1993,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-target"><code>target</code> attribute</h2>
+  <hgroup>
+    <h2 id="target"><code>target</code> attribute</h2>
+  </hgroup>
 
   The `target` attribute relates a navigable on the following elements:
   <a href="/en/html-content-forms/#element-form"><code>form</code>,</a> 
@@ -2125,7 +2013,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-formtarget"><code>formtarget</code> attribute</h2>
+  <hgroup>
+    <h2 id="formtarget"><code>formtarget</code> attribute</h2>
+  </hgroup>
 
   The `formtarget` attribute relates an higher precedence [`target` attribute](#attribute-target) but on the following elements: [`button`,](/en/html-content-forms/#element-button) and [`input`.](/en/html-content-forms/#element-input)
 
@@ -2137,7 +2027,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-autofocus"><code>autofocus</code> attribute</h2>
+  <hgroup>
+    <h2 id="autofocus"><code>autofocus</code> attribute</h2>
+  </hgroup>
 
   The `autofocus` boolean attribute relates an automatic focus upon page load on an editable HTML element
 
@@ -2149,7 +2041,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-tabindex"><code>tabindex</code> attribute</h2>
+  <hgroup>
+    <h2 id="tabindex"><code>tabindex</code> attribute</h2>
+  </hgroup>
 
   The `tabindex` attribute relates a focus and a focus order on an HTML element
 
@@ -2184,7 +2078,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-accesskey"><code>accesskey</code> attribute</h2>
+  <hgroup>
+    <h2 id="accesskey"><code>accesskey</code> attribute</h2>
+  </hgroup>
 
   The `accesskey` relates an identifier to help user agents create a keyboard shortcut on an HTML element
 
@@ -2198,7 +2094,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-enterhintkey"><code>enterhintkey</code> attribute</h2>
+  <hgroup>
+    <h2 id="enterhintkey"><code>enterhintkey</code> attribute</h2>
+  </hgroup>
 
   The `enterhintkey` attribute relates a label for the <kbd>enter</kbd> key in a virtual keyboard on an HTML element
 
@@ -2259,7 +2157,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-inputmode"><code>inputmode</code> attribute</h2>
+  <hgroup>
+    <h2 id="inputmode"><code>inputmode</code> attribute</h2>
+  </hgroup>
 
   The `inputmode` attribute relates a type of virtual keyboard to edit content on an editable HTML element
 
@@ -2326,7 +2226,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-spellcheck"><code>spellcheck</code> attribute</h2>
+  <hgroup>
+    <h2 id="spellcheck"><code>spellcheck</code> attribute</h2>
+  </hgroup>
 
   The `spellcheck` attribute relates a spelling and grammar audit on an editable HTML element
 
@@ -2357,7 +2259,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-autocomplete"><code>autocomplete</code> attribute</h2>
+  <hgroup>
+    <h2 id="autocomplete"><code>autocomplete</code> attribute</h2>
+  </hgroup>
 
   The `autocomplete` attribute relates automatic value prediction functionality on the following elements:
   <a href="/en/html-content-forms/#element-textarea"><code>textarea</code>,</a> 
@@ -2412,7 +2316,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-list"><code>list</code> attribute</h2>
+  <hgroup>
+    <h2 id="list"><code>list</code> attribute</h2>
+  </hgroup>
 
   The `list` attribute relates a [`datalist` element](/en/html-content-forms/#element-datalist) for value suggestions on an [`input` element](/en/html-content-forms/#element-input)
 
@@ -2426,7 +2332,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-autocapitalize"><code>autocapitalize</code> attribute</h2>
+  <hgroup>
+    <h2 id="autocapitalize"><code>autocapitalize</code> attribute</h2>
+  </hgroup>
 
   The `autocapitalize` attribute relates automatic capitalization of text made via input mechanisms other than a physical keyboard on an editable HTML element
 
@@ -2469,7 +2377,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-wrap"><code>wrap</code> attribute</h2>
+  <hgroup>
+    <h2 id="wrap"><code>wrap</code> attribute</h2>
+  </hgroup>
 
   The `wrap` attribute relates whether new lines are included in text submission on a [`textarea` element](/en/html-content-forms/#element-textarea)
 
@@ -2496,7 +2406,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-disabled"><code>disabled</code> attribute</h2>
+  <hgroup>
+    <h2 id="disabled"><code>disabled</code> attribute</h2>
+  </hgroup>
 
   The `disabled` boolean attribute relates an unusable functionality on the following elements:
   <a href="/en/html-content-forms/#element-fieldset"><code>fieldset</code>,</a> 
@@ -2518,7 +2430,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-readonly"><code>readonly</code> attribute</h2>
+  <hgroup>
+    <h2 id="readonly"><code>readonly</code> attribute</h2>
+  </hgroup>
 
   The `readonly` boolean attribute relates an uneditable functionality on on the following elements: [`textarea`,](/en/html-content-forms/#element-textarea) and [`input`.](/en/html-content-forms/#element-input)
 
@@ -2530,7 +2444,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-required"><code>required</code> attribute</h2>
+  <hgroup>
+    <h2 id="required"><code>required</code> attribute</h2>
+  </hgroup>
 
   The `required` boolean attribute relates a compulsory functionality on the following elements: [`textarea`,](/en/html-content-forms/#element-textarea) [`select`,](/en/html-content-forms/#element-select) and [`input`.](/en/html-content-forms/#element-input)
 
@@ -2542,7 +2458,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-multiple"><code>multiple</code> attribute</h2>
+  <hgroup>
+    <h2 id="multiple"><code>multiple</code> attribute</h2>
+  </hgroup>
 
   The `multiple` boolean attribute relates the following functionalities:
 
@@ -2558,7 +2476,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-checked"><code>checked</code> attribute</h2>
+  <hgroup>
+    <h2 id="checked"><code>checked</code> attribute</h2>
+  </hgroup>
 
   The `checked` boolean attribute relates an on-state on an [`input` element](/en/html-content-forms/#element-input)
 
@@ -2570,7 +2490,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-selected"><code>selected</code> attribute</h2>
+  <hgroup>
+    <h2 id="selected"><code>selected</code> attribute</h2>
+  </hgroup>
 
   The `selected` boolean attribute relates a default on an [`option` element](/en/html-content-forms/#element-option)
 
@@ -2582,7 +2504,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-maxlength"><code>maxlength</code> attribute</h2>
+  <hgroup>
+    <h2 id="maxlength"><code>maxlength</code> attribute</h2>
+  </hgroup>
 
   The `maxlength` attribute relates the following:
 
@@ -2600,7 +2524,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-minlength"><code>minlength</code> attribute</h2>
+  <hgroup>
+    <h2 id="minlength"><code>minlength</code> attribute</h2>
+  </hgroup>
 
   The `minlength` attribute relates the following:
 
@@ -2619,7 +2545,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-size"><code>size</code> attribute</h2>
+  <hgroup>
+    <h2 id="size"><code>size</code> attribute</h2>
+  </hgroup>
 
   The `size` attribute relates the following:
 
@@ -2644,7 +2572,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-pattern"><code>pattern</code> attribute</h2>
+  <hgroup>
+    <h2 id="pattern"><code>pattern</code> attribute</h2>
+  </hgroup>
 
   The `pattern` attribute relates an acceptable form of value on an [`input` element](/en/html-content-forms/#element-input)
 
@@ -2658,7 +2588,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-placeholder"><code>placeholder</code> attribute</h2>
+  <hgroup>
+    <h2 id="placeholder"><code>placeholder</code> attribute</h2>
+  </hgroup>
 
   The `placeholder` attribute relates an example of a value on the following elements when empty: [`textarea` element](/en/html-content-forms/#element-textarea) and [`input` element](/en/html-content-forms/#element-input)
 
@@ -2672,7 +2604,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-value"><code>value</code> attribute</h2>
+  <hgroup>
+    <h2 id="value"><code>value</code> attribute</h2>
+  </hgroup>
 
   The `value` attribute relates the following:
 
@@ -2729,7 +2663,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-min"><code>min</code> attribute</h2>
+  <hgroup>
+    <h2 id="min"><code>min</code> attribute</h2>
+  </hgroup>
 
   The `min` attribute relates the lower bound of a range on the following elements: [`input`,](/en/html-content-forms/#element-input) and [`meter`.](/en/html-content-connotations/#element-meter)
 
@@ -2743,7 +2679,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-step"><code>step</code> attribute</h2>
+  <hgroup>
+    <h2 id="step"><code>step</code> attribute</h2>
+  </hgroup>
 
   The `step` attribute relates an increment or decrement factor on an [`input` element](/en/html-content-forms/#element-input)
 
@@ -2761,7 +2699,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-max"><code>max</code> attribute</h2>
+  <hgroup>
+    <h2 id="max"><code>max</code> attribute</h2>
+  </hgroup>
 
   The `max` attribute relates the upper bound of a range on the following elements:
   <a href="/en/html-content-forms/#element-input"><code>input</code>,</a> 
@@ -2778,7 +2718,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-low"><code>low</code> attribute</h2>
+  <hgroup>
+    <h2 id="low"><code>low</code> attribute</h2>
+  </hgroup>
 
   The `low` attribute relates the lower part of a bounded range on a [`meter` element](/en/html-content-connotations/#element-meter)
 
@@ -2793,7 +2735,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-high"><code>high</code> attribute</h2>
+  <hgroup>
+    <h2 id="high"><code>high</code> attribute</h2>
+  </hgroup>
 
   The `high` attribute relates the higher part of a bounded range on a [`meter` element](/en/html-content-connotations/#element-meter)
 
@@ -2807,7 +2751,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-optimum"><code>optimum</code> attribute</h2>
+  <hgroup>
+    <h2 id="optimum"><code>optimum</code> attribute</h2>
+  </hgroup>
 
   The `optimum` attribute relates the preferable part of a bounded range on a [`meter` element](/en/html-content-connotations/#element-meter)
 
@@ -2823,7 +2769,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-accept"><code>accept</code> attribute</h2>
+  <hgroup>
+    <h2 id="accept"><code>accept</code> attribute</h2>
+  </hgroup>
 
   The `accept` attribute relates a sort of resource for upload on an [`input` element](/en/html-content-forms/#element-input)
 
@@ -2860,7 +2808,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-start"><code>start</code> attribute</h2>
+  <hgroup>
+    <h2 id="start"><code>start</code> attribute</h2>
+  </hgroup>
 
   The `start` attribute relates the starting number of a list on an [`ol` element](/en/html-content-layers/#element-ol)
 
@@ -2875,7 +2825,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-reversed"><code>reversed</code> attribute</h2>
+  <hgroup>
+    <h2 id="reversed"><code>reversed</code> attribute</h2>
+  </hgroup>
 
   The `reversed` boolean attribute relates a descending order of list items on an [`ol` element](/en/html-content-layers/#element-ol)
 
@@ -2887,7 +2839,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-abbr"><code>abbr</code> attribute</h2>
+  <hgroup>
+    <h2 id="abbr"><code>abbr</code> attribute</h2>
+  </hgroup>
 
   The `abbr` attribute relates an alternative title on a [`th` element](/en/html-content-layers/#element-th) 
 
@@ -2901,7 +2855,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-scope"><code>scope</code> attribute</h2>
+  <hgroup>
+    <h2 id="scope"><code>scope</code> attribute</h2>
+  </hgroup>
 
   The `scope` attribute relates a set of table cells on a [`th` element](/en/html-content-layers/#element-th)
 
@@ -2951,7 +2907,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-headers"><code>headers</code> attribute</h2>
+  <hgroup>
+    <h2 id="headers"><code>headers</code> attribute</h2>
+  </hgroup>
 
   The `headers` attribute relates some [`th` elements](/en/html-content-layers/#element-th) on the following elements: [`td`,](/en/html-content-layers/#element-td) and [`th`.](/en/html-content-layers/#element-th)
 
@@ -2966,7 +2924,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-cols"><code>cols</code> attribute</h2>
+  <hgroup>
+    <h2 id="cols"><code>cols</code> attribute</h2>
+  </hgroup>
 
   The `cols` attribute relates a wideness on a [`textarea` element](/en/html-content-forms/#element-textarea)
 
@@ -2982,7 +2942,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-span"><code>span</code> attribute</h2>
+  <hgroup>
+    <h2 id="span"><code>span</code> attribute</h2>
+  </hgroup>
 
   The `span` attribute relates a wideness on the following elements: [`colgroup`,](/en/html-content-layers/#element-colgroup) and [`col`.](/en/html-content-layers/#element-col)
 
@@ -2996,7 +2958,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-colspan"><code>colspan</code> attribute</h2>
+  <hgroup>
+    <h2 id="colspan"><code>colspan</code> attribute</h2>
+  </hgroup>
 
   The `colspan` attribute relates a wideness on the following elements: [`th`,](/en/html-content-layers/#element-th) and [`td`.](/en/html-content-layers/#element-td)
 
@@ -3010,7 +2974,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-rows"><code>rows</code> attribute</h2>
+  <hgroup>
+    <h2 id="rows"><code>rows</code> attribute</h2>
+  </hgroup>
 
   The `rows` attribute relates a highness on a [`textarea` element](/en/html-content-forms/#element-textarea)
 
@@ -3027,7 +2993,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-rowspan"><code>rowspan</code> attribute</h2>
+  <hgroup>
+    <h2 id="rowspan"><code>rowspan</code> attribute</h2>
+  </hgroup>
 
   The `rowspan` attribute relates a highness on the following elements: [`th`,](/en/html-content-layers/#element-th) and [`td`.](/en/html-content-layers/#element-td)
 
@@ -3042,7 +3010,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-open"><code>open</code> attribute</h2>
+  <hgroup>
+    <h2 id="open"><code>open</code> attribute</h2>
+  </hgroup>
 
   The `open` boolean attribute relates a revelation of content on  the following elements: 
   [`details`,](/en/html-content-blocks/#element-details) and 
@@ -3056,7 +3026,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-href"><code>href</code> attribute</h2>
+  <hgroup>
+    <h2 id="href"><code>href</code> attribute</h2>
+  </hgroup>
 
   The `href` attribute relates a resource address on the following elements: 
   <a href="/en/html-content-connotations/#element-a"><code>a</code>,</a>  
@@ -3074,7 +3046,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-download"><code>download</code> attribute</h2>
+  <hgroup>
+    <h2 id="download"><code>download</code> attribute</h2>
+  </hgroup>
 
   The `download` boolean attribute relates a download functionality on the following elements: [`a`,](/en/html-content-connotations/#element-a) and [`area`](/en/html-content-objects/#element-area)
 
@@ -3086,7 +3060,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-ping"><code>ping</code> attribute</h2>
+  <hgroup>
+    <h2 id="ping"><code>ping</code> attribute</h2>
+  </hgroup>
 
   The `ping` attribute relates a set of addresses for hyperlink auditors on the following elements: [`a`,](/en/html-content-connotations/#element-a) and [`area`](/en/html-content-objects/#element-area)
 
@@ -3100,7 +3076,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-cite"><code>cite</code> attribute</h2>
+  <hgroup>
+    <h2 id="cite"><code>cite</code> attribute</h2>
+  </hgroup>
 
   The `cite` attribute relates the following:
 
@@ -3119,7 +3097,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-datetime"><code>datetime</code> attribute</h2>
+  <hgroup>
+    <h2 id="datetime"><code>datetime</code> attribute</h2>
+  </hgroup>
 
   The `datetime` attribute relates the following:
 
@@ -3141,7 +3121,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-inert"><code>inert</code> attribute</h2>
+  <hgroup>
+    <h2 id="inert"><code>inert</code> attribute</h2>
+  </hgroup>
 
   The `inert` boolean attribute relates a non-active functionality on an HTML element
 
@@ -3153,7 +3135,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-hidden"><code>hidden</code> attribute</h2>
+  <hgroup>
+    <h2 id="hidden"><code>hidden</code> attribute</h2>
+  </hgroup>
 
   The `hidden` attribute relates a no-render state on an HTML element. On a `main` element, it means a <b>potential</b> [Main Card](/en/html-content-cards/#card-main).
 
@@ -3186,7 +3170,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-itemscope"><code>itemscope</code> attribute</h2>
+  <hgroup>
+    <h2 id="itemscope"><code>itemscope</code> attribute</h2>
+  </hgroup>
 
   The `itemscope` boolean attribute relates a microdata item tag on an HTML element
 
@@ -3198,7 +3184,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-itemtype"><code>itemtype</code> attribute</h2>
+  <hgroup>
+    <h2 id="itemtype"><code>itemtype</code> attribute</h2>
+  </hgroup>
 
   The `itemtype` attribute relates a microdata vocabulary on an HTML element with an [`itemscope` attribute](#attribute-itemscope)
 
@@ -3212,7 +3200,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-itemid"><code>itemid</code> attribute</h2>
+  <hgroup>
+    <h2 id="itemid"><code>itemid</code> attribute</h2>
+  </hgroup>
 
   The `itemid` attribute relates the global identifier of an [`itemtype` attribute](#attribute-itemtype) on an [itemscoped attribute](#attribute-itemscope)
 
@@ -3227,7 +3217,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-itemprop"><code>itemprop</code> attribute</h2>
+  <hgroup>
+    <h2 id="itemprop"><code>itemprop</code> attribute</h2>
+  </hgroup>
 
   The `itemprop` attribute relates a microdata property name on an HTML element
 
@@ -3275,7 +3267,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-itemref"><code>itemref</code> attribute</h2>
+  <hgroup>
+    <h2 id="itemref"><code>itemref</code> attribute</h2>
+  </hgroup>
 
   The `itemref` attribute relates a set of additional [microdata properties](#attribute-itemprop) on an [itemscoped element](#attribute-itemscope)
 
@@ -3290,7 +3284,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-popover"><code>popover</code> attribute</h2>
+  <hgroup>
+    <h2 id="popover"><code>popover</code> attribute</h2>
+  </hgroup>
 
   The `popover` attribute relates a popover functionality on an HTML element
 
@@ -3337,7 +3333,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-popovertarget"><code>popovertarget</code> attribute</h2>
+  <hgroup>
+    <h2 id="popovertarget"><code>popovertarget</code> attribute</h2>
+  </hgroup>
 
   The `popovertarget` attribute relates a [popover](#attribute-popover) on the following elements: [`button`,](/en/html-content-forms/#element-button) and [`input`](/en/html-content-forms/#element-input)
 
@@ -3351,7 +3349,9 @@ The `name` attribute relates the following:
 
 
 <section>
-  <h2 id="attribute-popovertargetaction"><code>popovertargetaction</code> attribute</h2>
+  <hgroup>
+    <h2 id="popovertargetaction"><code>popovertargetaction</code> attribute</h2>
+  </hgroup>
 
   The `popovertargetaction` attribute relates the visibility status of a [popover](#attribute-popover) on the following elements: [`button`,](/en/html-content-forms/#element-button) and [input.](/en/html-content-forms/#element-input)
 
