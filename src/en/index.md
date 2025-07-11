@@ -22,4 +22,4 @@ I'm Toheeb O. Ogunbiyi — T.O.O. — TWO — 2. A national award-winning web de
 
 - [HTML Metadata Creator](/en/play)
 
-- [Thoughts](/en/thoughts)
+- [Journal](/en/journal)

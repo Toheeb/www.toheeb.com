@@ -1,6 +1,6 @@
 ---
 layout: base.html
-title: Thoughts
+title: Journal
 ---
 
 
@@ -17,7 +17,7 @@ So, you'll always think first and you must learn to think well. Then, learn to c
 
 No one should think for you but one can help you think. While one may communicate for you, you still need to communicate well enough to that one.
 
-As such: learn to think well, then learn to communicate well.
+Learn to think well, then learn to communicate well.
 </section>
 
 
@@ -51,4 +51,23 @@ Do not worry about going round; find your catalyst to uplift each round. <svg wi
 
 
 You will spring up.
+</section>
+
+
+<section>
+<hgroup>
+<h2>Marketin Web Creator</h2>
+</hgroup>
+
+I've touted "Web Creator is 96% more powerful than 'another website builder' based on the current milestone"; true but limiting.
+
+The tone implies Web Creator is a better alternative but I don't want it to be yet; Not when it's incomplete. Why advocate for someone to dump a complete tool with limitations for an incomplete tool without limitations? 
+
+I want a tone that sounds like a complementary tool. I want users of my competitors to include Web Creator to their workflow. This should help with adoption and transition.
+
+This change needs 2 things:
+
+- A playground to help those users generate code with a nocode interface. They would want to because they can't with their tool.
+
+- A series of articles to show how Web Creator can be used along with top Website Builders. This onboards those users.
 </section>
