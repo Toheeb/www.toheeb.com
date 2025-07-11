@@ -1,8 +1,51 @@
 ---
 layout: base.html
-title: CSS Components
+title: CSS Components (draft)
 ---
 
+For personalizable styles.
+
+<section>
+<hgroup>
+<h2>Color Tokens</h2>
+</hgroup>
+
+Color builds on a hue token. It requires 2 functions to maintain expectations when hue changes in real-time. 
+
+- calc() create multi-color design via hue deviation
+
+- oklch() maintains contrast & hierachy via lightness and chroma
+</section>
+
+<section>
+<hgroup>
+<h2>Typography Tokens</h2>
+</hgroup>
+
+Typography builds on 3 tokens: font family, font size, and font scale.
+
+Font-family token expects a typeface to cover all design needs of the author: space, stretch, class, weight, style, variant, and stress.
+
+Font-size and font-scale tokens create a geometric sequence of sizes for: asides, paragraphs, subheadings, and h6 to h1. 
+</section>
+
+<section>
+<hgroup>
+<h2>Space Tokens</h2>
+</hgroup>
+
+Spacing builds on 3 tokens: line length, line height, and line scale.
+
+Line-length token caps the width of blocks. Line-height token set appropriate vertical spacing relative to the font size of the block. Together with Line-scale token, they create a geometric sequence for margins on: block medias, paragraphs, followers, section 6 to 1.
+</section>
+
+<section>
+<hgroup>
+<h2>Block Styles</h2>
+</hgroup>
+
+Primary Headings have 2 intrinsic properties: level and position. Both properties are best styled with a stacked tiered system; stacked because of low margin areas on mobile devices. For visual interest, the level property adds a size style to the component. 
+</section>
 
 <section>
 <hgroup>
