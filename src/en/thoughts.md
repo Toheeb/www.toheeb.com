@@ -1,7 +1,30 @@
 ---
 layout: base.html
-title: In Circle or Spring?
+title: Thoughts
 ---
+
+
+<section>
+<hgroup>
+<h2>Thought and Communications</h2>
+</hgroup>
+
+You can think without communicating. 
+
+But, you can't communicate without thinking. If you were to, you'd spill a raw thought. 
+
+So, you'll always think first and you must learn to think well. Then, learn to communicate well.
+
+No one should think for you but one can help you think. While one may communicate for you, you still need to communicate well enough to that one.
+
+As such: learn to think well, then learn to communicate well.
+</section>
+
+
+<section>
+<hgroup>
+<h2>In circle or spring?</h2>
+</hgroup>
 
 You want to go up, straight up. <svg width=".75em" height=".75em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.3536 1.64645C12.1583 1.45118 11.8417 1.45118 11.6464 1.64645L8.46447 4.82843C8.2692 5.02369 8.2692 5.34027 8.46447 5.53553C8.65973 5.7308 8.97631 5.7308 9.17157 5.53553L12 2.70711L14.8284 5.53553C15.0237 5.7308 15.3403 5.7308 15.5355 5.53553C15.7308 5.34027 15.7308 5.02369 15.5355 4.82843L12.3536 1.64645ZM12 23H12.5V2H12H11.5V23H12Z" fill="currentColor"/></svg>
 
@@ -28,3 +51,4 @@ Do not worry about going round; find your catalyst to uplift each round. <svg wi
 
 
 You will spring up.
+</section>
