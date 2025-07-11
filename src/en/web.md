@@ -1,6 +1,6 @@
 ---
 layout: base.html
-title: Web Architecture (draft)
+title: To Free Web (draft)
 ---
 
 
@@ -159,3 +159,23 @@ It'll be hard for Social Platforms to flag such media; there will be tools that 
 The solution is to publish your content on your web domain. Your domain becomes the source of truth.
 </section>
 
+
+<section>
+<hgroup>
+<h2>Web Strategy</h2>
+</hgroup>
+
+- Create a base design system
+
+- Improve the design system by recoding sites
+
+- Share case studies that teaches the mental model of building sites
+
+- Create templates to fast-track page building for different platforms
+
+- Use that experience to create an authoring system that edit and build templates
+
+- Create protocols for fundamental web activities
+
+- Upgrade the system to use any web activities
+</section>
