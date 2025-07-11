@@ -3,6 +3,49 @@ layout: base.html
 title: Journal
 ---
 
+There are billions of think pieces but I feel they can be reduced to fundamental principles. This is a journey to simplify them. First, not-so-random thoughts:
+
+<section>
+<hgroup>
+<h2>7 Steps to Sales</h2>
+</hgroup>
+
+7 lessons from Sell like Crazy by Sabri Suby, and Traffic Secrets by Russell Brunson
+
+1. Craft a Promotional Statement to guide your messages, partnerships, and ventures.
+
+1. Search your Business Queries and discover the following Customer Insights from posts and comments
+
+   - Customer Desire which is either a Need that moves them from pain or a Want that moves them towards pleasure
+
+   - Customer Blocks which are Challenges that hardens their goal and Frustrations that stops their goal
+
+   - Customer Concerns which are Hopes that encourages them and Fears that discourages them 
+
+   - Customer Languages which are their Word Choices and Word Styles
+
+   - Customer Influencers in their source of information
+
+3. Curate your Dream-100 targets and form your Customer Avatar
+ 
+1. Compose Business Pages targeted at your Customer Avatar with any of the following 3 closes. 
+
+      1. Emotional Close which acknowledges the problem, promise a solution, and presents some 1st-party proofs,
+
+     1. Rational Close which conveys problem cause, status quo, product features, product advantage, product benefits, brand guarantee, and 3rd party proofs
+
+    1. FOMO Close which conveys consequences of no action, late action, limited availability, and proofs
+
+    PS: Each Close should start with a hook and end with a CTA
+
+1. Connect, appease, and engage your Dream-100 at the Distribution Channels they congregate
+
+1. Tailor your Business Pages to that of your Dream-100 Influencer's Channels so your contents resonate to their audience – your Dream Customers
+
+1. Partner with your Dream-100 Influencers, as well as Create ADs on the Channel's platform to direct traffic to your business pages
+
+
+</section>
 
 <section>
 <hgroup>
