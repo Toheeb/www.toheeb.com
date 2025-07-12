@@ -5,7 +5,25 @@ title: CSS Components (draft)
 
 For personalizable styles.
 
-<section>
+- [Color Tokens](#token-color)
+
+- [Type Tokens](#token-type)
+
+- [Space Tokens](#token-space)
+
+- [Block Styles](#style-block)
+
+- [Semantic CSS](#semantic-css)
+
+- [Layout Mode](#mode-layout)
+
+- [Indentation](#indentation)
+
+- [Margin Top vs Margin Bottom](#margin-top-or-bottom)
+
+- [Margin vs Padding vs Gap](#space-type)
+
+<section id=token-color>
 <hgroup>
 <h2>Color Tokens</h2>
 </hgroup>
@@ -17,7 +35,7 @@ Color builds on a hue token. It requires 2 functions to maintain expectations wh
 - oklch() maintains contrast & hierachy via lightness and chroma
 </section>
 
-<section>
+<section id=token-type>
 <hgroup>
 <h2>Typography Tokens</h2>
 </hgroup>
@@ -29,7 +47,7 @@ Font-family token expects a typeface to cover all design needs of the author: sp
 Font-size and font-scale tokens create a geometric sequence of sizes for: asides, paragraphs, subheadings, and h6 to h1. 
 </section>
 
-<section>
+<section id=token-space>
 <hgroup>
 <h2>Space Tokens</h2>
 </hgroup>
@@ -39,7 +57,7 @@ Spacing builds on 3 tokens: line length, line height, and line scale.
 Line-length token caps the width of blocks. Line-height token set appropriate vertical spacing relative to the font size of the block. Together with Line-scale token, they create a geometric sequence for margins on: block medias, paragraphs, followers, section 6 to 1.
 </section>
 
-<section>
+<section id=style-block>
 <hgroup>
 <h2>Block Styles</h2>
 </hgroup>
@@ -47,7 +65,7 @@ Line-length token caps the width of blocks. Line-height token set appropriate ve
 Primary Headings have 2 intrinsic properties: level and position. Both properties are best styled with a stacked tiered system; stacked because of low margin areas on mobile devices. For visual interest, the level property adds a size style to the component. 
 </section>
 
-<section>
+<section id=semantic-css>
 <hgroup>
 <h2>Semantic CSS</h2>
 </hgroup>
@@ -59,7 +77,7 @@ A link may have a text-underline. A button has an all-round border. A tab may ha
 </section>
 
 
-<section>
+<section id=space-type>
 <hgroup>
   <h2>Padding vs Margin vs Gap</h2>
 </hgroup>
@@ -74,7 +92,7 @@ In Custom Mode, containers become relevant and gap becomes handy to target child
 </section>
 
 
-<section>
+<section id=margin-top-or-bottom>
 <hgroup>
 <h2>Margin Top or Bottom?</h2>
 </hgroup>
@@ -90,7 +108,7 @@ Margin Top can do one thing that Margin Bottom can't do. Margin Top can infer sp
 </section>
 
 
-<section>
+<section id=indentation>
 <hgroup>
 <h2>Indentation</h2>
 </hgroup>
@@ -103,7 +121,7 @@ Base CSS should provide no settings of such in custom mode.
 </section>
 
 
-<section>
+<section id=mode-layout>
 <hgroup>
 <h2>Document & Custom Layout</h2>
 </hgroup>

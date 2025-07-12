@@ -3,8 +3,19 @@ layout: base.html
 title: To Free Web (draft)
 ---
 
+- [Idea](#idea)
 
-<section>
+- [Promise](#promise)
+
+- [strategy](#strategy)
+
+- [Eras](#eras)
+
+- [JS Only](#js-only)
+
+- [Deepfakes](#de-deepfakes)
+
+<section id=idea>
 <hgroup>
 <h2>Idea</h2>
 </hgroup>
@@ -82,7 +93,7 @@ You see, all these activities without visiting third-party websites. Meaning, th
 </section>
 
 
-<section>
+<section id=promise>
 <hgroup>
 <h2>Unlocking the Web's Promise</h2>
 </hgroup>
@@ -100,7 +111,29 @@ Soon, after democratizing the web workflow, you will act all acts via your own s
 
 
 
-<section>
+<section id=strategy>
+<hgroup>
+<h2>Web Strategy</h2>
+</hgroup>
+
+- Create a base design system
+
+- Improve the design system by recoding sites
+
+- Share case studies that teaches the mental model of building sites
+
+- Create templates to fast-track page building for different platforms
+
+- Use that experience to create an authoring system that edit and build templates
+
+- Create protocols for fundamental web activities
+
+- Upgrade the system to use any web activities
+</section>
+
+
+
+<section id=eras>
 <hgroup>
 <h2>Web Eras</h2>
 </hgroup>
@@ -132,7 +165,7 @@ You get to own your storage for total content control. And, you get to call on t
 </section>
 
 
-<section>
+<section id=js-only>
 <hgroup>
 <h2>To Javascript-only</h2>
 </hgroup>
@@ -146,7 +179,7 @@ In fact, I now feel all logics should, by default, be at the client side so far 
 </section>
 
 
-<section>
+<section id=de-deepfakes>
 <hgroup>
 <h2>De-Deepfakes</h2>
 </hgroup>
@@ -159,23 +192,3 @@ It'll be hard for Social Platforms to flag such media; there will be tools that 
 The solution is to publish your content on your web domain. Your domain becomes the source of truth.
 </section>
 
-
-<section>
-<hgroup>
-<h2>Web Strategy</h2>
-</hgroup>
-
-- Create a base design system
-
-- Improve the design system by recoding sites
-
-- Share case studies that teaches the mental model of building sites
-
-- Create templates to fast-track page building for different platforms
-
-- Use that experience to create an authoring system that edit and build templates
-
-- Create protocols for fundamental web activities
-
-- Upgrade the system to use any web activities
-</section>

@@ -5,7 +5,7 @@ title: 2 for Free
 
 I'm Toheeb O. Ogunbiyi — T.O.O. — TWO — <strong>2</strong>. A national award-winning web developer of the most populous black nation on earth. I'm pioneering personalizable web design and I aim to reform the world wide web for a <strong>free</strong> web.
 
-- [To Free Web](/en/web-architecture) <small>(draft)</small>
+- [To Free Web](/en/web) <small>(draft)</small>
 
 - <details open>
     <summary>Base Design System</summary>
