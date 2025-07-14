@@ -20,7 +20,7 @@ pageStyle: |
   </style>
 ---
 
-
+<main>
 <section>
 <hgroup>
 <h1>{{title}}</h1>
@@ -556,3 +556,4 @@ The `script` element creates 6 metadata via a combination of its `type` and `src
 
 </details>
 </aside>
+</main>

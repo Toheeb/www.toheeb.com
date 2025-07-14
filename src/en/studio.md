@@ -1,14 +1,19 @@
 ---
-layout: base.html
-title: At Studio 2
+layout: plain.html
+title: Your website, personalizable by users
 ---
 
-I help scale-ups code web interfaces that their <strong>users can personalise.</strong>
+<header>
+<p>Studio 2</p>
+</header>
 
-Then, I use that money to make <strong>the freest web.</strong>
+<main>
+<section>
+<hgroup>
+<h1>{{title}}</h1>
+</hgroup>
 
-If you decide not to settle for today's depersonalised site, I'm your guy — the <em>pioneer</em> of Personalisable Web Designs and a Web <em>Reformer.</em>
+I believe that the best brand experiences are co-created with users. That's why I pioneer & code web UIs that enable personalizations. You need not settle for unbrandable brands, that's so yesterday, <a href="mailto:toogunbiyi@gmail.com">send an email.</a>
+</section>
+</main>
 
-You can send me your UI Design now and I will code it for around $100 per segment. 
-
-Let us make the web personalisable and free. <a href="https://tally.so/r/w4dozk">Send design.</a>
