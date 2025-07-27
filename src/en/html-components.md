@@ -48,21 +48,6 @@ A web document has one root and two branches, like the letter Y. The root is the
 
 The head element contains Metadata — optionally, via a noscript element; the body element contains Windows. Windows contain Frames; Frames contain Blocks and Mix of Blocks; and Blocks contain Media, Forms, and Breaks — optionally, via a Phrase.
 
-<details>
-<summary>Style Guide</summary>
-
-Every web document must start with a doctype, charset, and title. Then, continue with metadata for viewport, color scheme, and base design system.
-
-Since the body element, a primary window, must be the root of all windows, a div should act like the primary window to contain primary content.
-
-Secondary Windows should follow the Primary Window, under the Window Root, rather than being scattered deep in the Window Root.
-
-A window should have a Main Landmark that is not hidden.
-
-A Main Landmark should have heading level 1 to relate content of the title element (meant for user agents) to users.
-</details>
-</section>
-
 
 <section>
 <hgroup>
@@ -167,56 +152,31 @@ A Noscript Metadata must not contain the following metadata:
 <h2>Windows</h2>
 </hgroup>
 
-HTML has 2 window components:
+HTML has 2 Window Components:
 
 - Primary Window
 
 - Secondary Window
 
+Each window uses Landmarks as frames to expose contents. 
+
+HTML has 3 categories of Landmarks:
+
+- Primary Landmark
+
+- Secondary landmarks
+
+- Tertiary landmarks
+
+A Window should have one Primary Landmark and zero or more Secondary Landmarks. 
+
+The Primary Landmark should contain an L1 Heading to relate document title to users. 
+
+When there are multiple Primary Landmarks, all but one must have a `hidden` attribute.
+
+A tertiary landmark should only be used within a Section in the Primary Landmark or within a Secondary Landmark. 
 </section>
 
-
-
-<section>
-<hgroup>
-<h2>Frames</h2>
-</hgroup>
-
-Frames are parts of a Window or Section.
-
-HTML has 7 frame components. The first 3 are contextual primary frames while the other 4 are secondary frames.
-
-- Main Frame
-
-- General Section
-
-- Independent Section
-
-- Navigation Frame
-
-- Complementary Frame
-
-- Header Frame
-
-- Footer Frame
-
-In window context, primary frame is Main Frame. In Main Frame context, primary frame is General Section. In General Frame context, primary frame is a General Frame or an Independent Frame.
-
-One Main Frame must be active at a time, others must have a `hidden` attribute each.
-
-Of these frames: General, Independent, Navigation, and Complementary Frames are Sections; All except Independent Frame are landmarks in the context of a window.
-
-<details>
-<summary>Style</summary>
-
-There should be no Navigational or Complementary Frames if there's no General or Independent Frame. What's there to navigate or complement?
-
-Similarly, there should be no header or footer Frames if there's no General or Independent Frame.
-
-The section that makes the Main Frame of a document can't be independent of the document; it should be a General Frame. Heading Level 1 should always use a General Frame.
-
-</details>
-</section>
 
 
 <section>
@@ -226,15 +186,47 @@ The section that makes the Main Frame of a document can't be independent of the 
 
 Mixes build Frames of a Window with a set of Blocks. 
 
-HTML has 17 mixes; 12 are simple mixes called Cards, and 5 are compound mixes called Layers.
+HTML has 29 mixes; 5 are compound mixes called Layers.
+
+- Banner Landmark
+
+- Navigation Landmark
+
+- Complementary Landmark
+
+- Form Landmark
+
+- General Landmark
+
+- Info Landmark
+
+- Navigation Section
+
+- Complementary Section
+
+- Article Section
+
+- General Section
+
+- Header Card
+
+- Footer Card
+
+- Description Layer
+
+- Menu List Layer
+
+- Ordered List Layer
+
+- Table Layer
+
+- Unordered List Layer
 
 - Address Card
 
 - Anchor Card
 
 - Deletion Card
-
-- Description Layer
 
 - Details Card
 
@@ -248,26 +240,21 @@ HTML has 17 mixes; 12 are simple mixes called Cards, and 5 are compound mixes ca
 
 - Map Card
 
-- Menu List Layer
-
 - Noscript Card
-
-- Ordered List Layer
 
 - Quote Card
 
 - Search Card
 
-- Table Layer
+Description Layer, Table Layer, and each Landmark are intiated by other content types.
 
-- Unordered List Layer
+Article Section and General Section provide the scope for Navigation Section, Complementary Section, Header Card, and Footer Card.
 
+Each Layer eventually contain cards:
 
-Each Layer eventually contain cards.
+List Layers contain Item Cards. 
 
-List Layers contain Item Cards.
-
-Description Layer contains Description Items. Description Items contain one or more Description Titles, and one or more Description Cards.
+Description Layer contains Description Items. Description Items contain one or more Description Titles, and one or more Description Cards. 
 
 Table Layers contain optional Table-caption cards, zero or more Table-column Reference, optional Table Head, zero or more Table Body, and optional Table Foot. Table-column Reference contains Table-column Items if there's no <code>span</code> attribute. Table Head, Table Body, and Table Foot contains Table Rows. Table Rows contain Table Titles if in Table Head, otherwise contain Table Data Cards.
 </section>
@@ -321,6 +308,8 @@ A Primary Heading may have Secondary Headings if there's a hgroup parent element
 An heading should have an explicit section. Explicit section, unlike implied section, can cover content that precedes the heading or that follows a sub section. 
 
 Per document, there should be only one heading level one (h1) — the root heading — like we have only one root window (body) and root element (html). It's illogical to have 2 roots in a document.
+
+A L1 Heading should use a General Section as the root section can't be independent of the document.
 
 A sub heading should have its section as a child of its parent section; you can't section a non-sectioning element.
 
@@ -537,6 +526,69 @@ HTML has 3 breaks:
 
 Thematic Break also changes composition between paragraph blocks.
 </section>
+
+
+<details id=boilerplate>
+<summary>Boilerplate</summary>
+
+Every web document must start with a doctype, charset, and title. Then, continue with metadata for viewport, color scheme, and base design system.
+
+Since the body element, a primary window, must be the root of all windows, a div should act like the primary window to contain primary content.
+
+Secondary Windows should follow the Primary Window, under the Window Root, rather than being scattered deep in the Window Root.
+
+A window should have a Main Landmark that is not hidden.
+
+A Main Landmark should have heading level 1 to relate content of the title element (meant for user agents) to users.
+
+```html
+<!-- Language Meta -->
+<!DOCTYPE>
+
+<!-- root element -->
+<html>
+
+  <!-- the first branch -->
+  <head>
+
+    <!-- Charset Meta -->
+    <meta charset="UTF-8">
+
+    <!-- Viewport Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title Meta -->
+    <title> <!-- ... --> </title>
+
+    <!-- Color Scheme Meta -->
+    <meta name="color-scheme" content="light dark">
+
+    <!-- Base Style Meta -->
+    <link rel="stylesheet" href="https://unpkg.com/@toheeb/base@x.x.x/base.css">
+
+    <!-- Base Settings Meta -->
+    <script src="https://unpkg.com/@toheeb/base@x.x.x/base-settings.js"></script>
+  </head>
+
+  <!-- the second branch -->
+  <body>
+
+    <!-- Primary Window -->
+    <div>
+
+      <!-- Primary Frame -->
+      <main>
+
+      </main>
+      
+    </div>
+    
+  </body>
+</html>
+```
+</details>
+</section>
+
 </section>
 
 <aside>
@@ -557,3 +609,6 @@ The `script` element creates 6 metadata via a combination of its `type` and `src
 </details>
 </aside>
 </main>
+
+
+<!-- Better Be Better -->
