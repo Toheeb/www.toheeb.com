@@ -3,15 +3,167 @@ layout: base.html
 title: CSS Components (draft)
 ---
 
-For personalizable styles.
+This might seem a stretch but it isn't far-fetched:
 
-- [Color Tokens](#token-color)
+Users should have the power to make every website look the same, to look their style if they want.
 
-- [Type Tokens](#token-type)
+That has been both possible and impossible.
 
-- [Space Tokens](#token-space)
+It's technically possible with User Stylesheets. Still, it's practically impossible for users to create stylesheets for billions of websites.
 
-- [Block Styles](#style-block)
+What's feasible — in fact, expected — is authors to write True CSS. By True CSS, stylesheets that cascade from the very top — the user's choices in the browser settings.
+
+So: when a user changes their choices, their style reflects in websites they visit.
+
+Meanwhile, CSS has its limitations and workarounds.
+
+CSS provides rem unit for authors to cascade down dimensions from a user's choice of font size in the browser settings. But, it provides nothing to cascade down other settings like font family and line height. However, it provides custom properties to fill the gaps.
+
+With custom properties, there are 2 needs:
+
+- A browser plugin to expose personalization options to users
+
+- A style guide for personalizable custom designs
+
+<section>
+<hgroup>
+<h2>:root styles</h2>
+</hgroup>
+<div>
+
+:root styles expects 4 properties of the 2 basic design elements: shape and space.
+
+Users will modify those properties via the browser plugin to personalize design components on the webpage.
+
+All 4 properties are from the primary shape — the typographic shape. One of these properties influences the implicit design element — space.
+
+<section>
+<hgroup>
+<h3>Color Property</h3>
+</hgroup>
+<div>
+
+Color Theme builds on a Color Hue for a Color Scheme. It requires 2 functions for personalizations:
+
+- calc() creates multi-color design via hue deviation
+
+- oklch() maintains contrast and hierarchy via lightness and chroma.
+
+The Base Color Chroma must be ? for any lightness of a hue to be in any Color Space defined by oklch().
+</div>
+</section>
+
+<section>
+<hgroup>
+<h3>Font Family Property</h3>
+</hgroup>
+<div>
+
+A Font Family is a typeface and its fallbacks. 
+
+Each typeface, of a script like Latin, should have characters (letters, punctuations, and numbers) in all font variants:
+
+- space: monospace or proportional
+
+- class: sans, serif, or cursive
+
+- weight: 100 to 900
+
+- width: ultra-condensed (50%) to ultra-expanded (200%)
+
+- style: normal, and italic.
+
+- case: smalls, caps, and small caps.
+
+- context: caption, body, and display.
+
+Authors may then use font-variant-alternates to create a multi-typeface design from a single-typeface. 
+
+</div>
+</section>
+
+<section>
+<hgroup>
+  <h3>Font Size Property</h3>
+</hgroup>
+<div>
+
+Font Size controls the dimension of characters. With a font scale token, it builds a size system for small and cap asides, block medias, mains, subheadings, and sections for h6 to h1. 
+</div>
+</section>
+
+
+<section>
+<hgroup>
+<h3>Line Length Property</h3>
+</hgroup>
+<div>
+
+Line Length caps the width of a text for easy reflow of the reader's eyes.
+</div>
+</section>
+
+
+<section>
+<hgroup>
+<h3>Line Height Property</h3>
+</hgroup>
+<div>
+
+Line Height creates a block space on a line of text. 
+
+The lead it creates should build the padding, margin, and gap of blocks and mixes.
+
+<details>
+<summary>Padding vs Margin vs Gap</summary>
+<div>
+
+Padding spaces an element's content away from its border, while Margin and Gap spaces an element away from another. 
+
+Unlike a Margin which applies to one element, Gap applies to many elements via the container. Each with its usecase.
+
+In Document Mode, blocks are the focus — not containers. You can't guarantee that writers will use containers. As such, layout requires the use of margins.
+
+In Custom Mode, containers become relevant and gap becomes handy to target children. With gap, existing margins become an intrusion — a reason why we do margin zero on the universal selector.
+</div>
+</details>
+
+<details>
+<summary>Margin Top or Bottom</summary>
+<div>
+
+You can specify both Margin Top and Margin Bottom and let Margin Collapse combine adjacent margins into the larger one.
+
+But Margin Collapse has its rules — it won't work all the time. 
+
+The reliable way is to use either margin top or margin bottom.
+
+Margin Top can do one thing that Margin Bottom can't do. Margin Top can infer space heirarchy on heading levels.
+</div>
+</details>
+</div>
+</section>
+
+</div>
+</section>
+
+
+<section>
+<hgroup>
+<h2>Heading Styles</h2>
+</hgroup>
+<div>
+
+Primary Headings have 2 intrinsic properties: level and position. Both properties are best styled with a stacked tiered system; stacked because of low margin areas on mobile devices. For visual interest, the level property adds a size style to the component. 
+</div>
+</section>
+
+
+<aside>
+<hgroup>
+<h2>Random Notes</h2>
+</hgroup>
+<div>
 
 - [Semantic CSS](#semantic-css)
 
@@ -19,55 +171,10 @@ For personalizable styles.
 
 - [Indentation](#indentation)
 
-- [Margin Top vs Margin Bottom](#margin-top-or-bottom)
-
-- [Margin vs Padding vs Gap](#space-type)
-
-<section id=token-color>
-<hgroup>
-<h2>Color Tokens</h2>
-</hgroup>
-
-Color builds on a hue token. It requires 2 functions to maintain expectations when hue changes in real-time. 
-
-- calc() create multi-color design via hue deviation
-
-- oklch() maintains contrast & hierachy via lightness and chroma
-</section>
-
-<section id=token-type>
-<hgroup>
-<h2>Typography Tokens</h2>
-</hgroup>
-
-Typography builds on 3 tokens: font family, font size, and font scale.
-
-Font-family token expects a typeface to cover all design needs of the author: space, stretch, class, weight, style, variant, and stress.
-
-Font-size and font-scale tokens create a geometric sequence of sizes for: asides, paragraphs, subheadings, and h6 to h1. 
-</section>
-
-<section id=token-space>
-<hgroup>
-<h2>Space Tokens</h2>
-</hgroup>
-
-Spacing builds on 3 tokens: line length, line height, and line scale.
-
-Line-length token caps the width of blocks. Line-height token set appropriate vertical spacing relative to the font size of the block. Together with Line-scale token, they create a geometric sequence for margins on: block medias, paragraphs, followers, section 6 to 1.
-</section>
-
-<section id=style-block>
-<hgroup>
-<h2>Block Styles</h2>
-</hgroup>
-
-Primary Headings have 2 intrinsic properties: level and position. Both properties are best styled with a stacked tiered system; stacked because of low margin areas on mobile devices. For visual interest, the level property adds a size style to the component. 
-</section>
 
 <section id=semantic-css>
 <hgroup>
-<h2>Semantic CSS</h2>
+<h3>Semantic CSS</h3>
 </hgroup>
 
 
@@ -77,53 +184,9 @@ A link may have a text-underline. A button has an all-round border. A tab may ha
 </section>
 
 
-<section id=space-type>
-<hgroup>
-  <h2>Padding vs Margin vs Gap</h2>
-</hgroup>
-
-Padding spaces an element's content away from its border, while Margin and Gap spaces an element away from another. 
-
-Unlike a Margin which applies to one element, Gap applies to many elements via the container. Each with its usecase.
-
-In Document Mode, blocks are the focus — not containers. You can't guarantee that writers will use containers. As such, layout requires the use of margins.
-
-In Custom Mode, containers become relevant and gap becomes handy to target children. With gap, existing margins become an intrusion — a reason why we do margin zero on the universal selector.
-</section>
-
-
-<section id=margin-top-or-bottom>
-<hgroup>
-<h2>Margin Top or Bottom?</h2>
-</hgroup>
-
-
-You can specify both Margin Top and Margin Bottom and let Margin Collapse combine adjacent margins into the larger one.
-
-But Margin Collapse has its rules — it won't work all the time. 
-
-The reliable way is to use either margin top or margin bottom.
-
-Margin Top can do one thing that Margin Bottom can't do. Margin Top can infer space heirarchy on heading levels.
-</section>
-
-
-<section id=indentation>
-<hgroup>
-<h2>Indentation</h2>
-</hgroup>
-
-In Document Layout, a reader may opt to read paragraphs with indent or not.
-
-In Custom Layout, a reader is subjected to the choice of the author. An author may choose to do both in the same layout.
-
-Base CSS should provide no settings of such in custom mode.
-</section>
-
-
 <section id=mode-layout>
 <hgroup>
-<h2>Document & Custom Layout</h2>
+<h3>Document & Custom Layout</h3>
 </hgroup>
 
 
@@ -136,3 +199,20 @@ There may be Custom Layouts in parts or full. Users should be able to switch or 
 Meanwhile, Authors need not compromise with Classless Stylesheets for Document Layout only and Normalize Stylesheets for Custom Layouts only. Authors need a document stylesheet that is ready for custom stylesheets. 
 
 </section>
+
+
+<section id=indentation>
+<hgroup>
+<h3>Indentation</h3>
+</hgroup>
+
+In Document Layout, a reader may opt to read paragraphs with indent or not.
+
+In Custom Layout, a reader is subjected to the choice of the author. An author may choose to do both in the same layout.
+
+Base CSS should provide no settings of such in custom mode.
+</section>
+
+
+</div>
+</aside>
