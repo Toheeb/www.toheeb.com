@@ -1,14 +1,18 @@
 ---
 layout: base.html
-title: 2 for Free
+title: Create Standard Web Documents without code
 ---
 
-I'm Toheeb O. Ogunbiyi — T.O.O. — TWO — <strong>2</strong>. A national award-winning web developer of the most populous black nation on earth. I'm pioneering personalizable web design and I aim to reform the world wide web for a <strong>free</strong> web.
+Coming soon.
+
+<footer>
+
+- [HTML Metadata Creator](/en/play) <small>Prototype</small>
 
 - [To Free Web](/en/web) <small>(draft)</small>
 
-- <details open>
-    <summary>Base Design System</summary>
+- <details>
+    <summary>Dev System</summary>
 
     - [HTML Components](/en/html-components) <small>(Beta)</small>
 
@@ -20,8 +24,8 @@ I'm Toheeb O. Ogunbiyi — T.O.O. — TWO — <strong>2</strong>. A national awa
 
   </details>
 
-- [Studio](/en/studio)
+- [Journal](/en/journal) <small>randoms</small>
 
-- [HTML Metadata Creator](/en/play)
+</footer>
 
-- [Journal](/en/journal)
+

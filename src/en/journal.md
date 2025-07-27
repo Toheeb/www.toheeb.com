@@ -3,6 +3,8 @@ layout: base.html
 title: Journal
 ---
 
+I'm Toheeb O. Ogunbiyi — T.O.O. — TWO — <strong>2</strong>. A national award-winning web developer of the most populous black nation on earth. I'm pioneering personalizable web design and I aim to reform the world wide web for a <strong>free</strong> web.
+
 There are billions of think pieces; all based on few fundamental pieces. This is a journey to those fundamentals. 
 
 - [Thoughts and Communications](#thought-and-communication)
