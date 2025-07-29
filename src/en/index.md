@@ -1,6 +1,7 @@
 ---
 layout: base.html
 title: Create Standard Web Documents without code
+titleAlias: Web Doc Creator
 ---
 
 Coming soon.
