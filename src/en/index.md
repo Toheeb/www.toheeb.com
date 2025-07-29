@@ -12,12 +12,14 @@ Coming soon.
 
 - [To Free Web](/en/web) <small>(draft)</small>
 
-- <details>
+- <details open>
     <summary>Dev System</summary>
 
     - [HTML Components](/en/html-components) <small>(Beta)</small>
 
     - [HTML Attributes](/en/html-attributes) <small>(Beta)</small>
+
+    - [HTML Tips](/en/html-tips)
 
     - [CSS Components](/en/css-components) <small>(Draft)</small>
 
