@@ -6,7 +6,6 @@ pageStyle: |
   <style>
     :root {
       --base-line-length: 40rem;
-      --base-font-scale: 1.125;
     }
 
     .col-list ul {
@@ -33,7 +32,9 @@ pageStyle: |
       border: none;
     }
 
-    
+    h1 {
+      display: grid;
+    }
   </style>
 ---
 
@@ -87,7 +88,7 @@ pageStyle: |
 </div>
 <hgroup>
 
-# {{title}}
+<h1><span>HTML</span><span>Components</span></h1>
 
 {{subtitle}}
 </hgroup>
